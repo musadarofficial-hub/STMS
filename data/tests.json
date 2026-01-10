@@ -1,0 +1,161 @@
+[
+  {
+    "id": "1",
+    "title": "JavaScript Certification - Domain 3",
+    "instructions": "Read each question carefully. These questions test logical understanding of decision making and loops.",
+    "timeLimit": 15,
+    "passingPercentage": 80,
+    "questions": [
+      {
+        "text": "A program checks whether a user is eligible for a discount by verifying that the age is greater than 18 and the membership status is true. Which logical operator should be used to ensure both conditions must be satisfied?",
+        "options": ["OR", "AND", "NOT", "XOR"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "If a for loop is written with an incorrect condition that never becomes false, what will be the most likely outcome during program execution?",
+        "options": ["Syntax error", "Loop executes once", "Infinite loop", "Program skips loop"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "A developer wants to execute a block of code at least once, even if the condition is initially false. Which loop structure best fulfills this requirement?",
+        "options": ["for loop", "while loop", "do while loop", "nested loop"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "When comparing two variables for both value and type inside an if condition, which comparison operator should be used to avoid unexpected type conversion?",
+        "options": ["==", "!=", "===", "<="],
+        "correctAnswer": 2
+      },
+      {
+        "text": "In a switch statement, what is the logical consequence of forgetting to include the break statement at the end of a matching case?",
+        "options": ["The switch exits immediately", "Only one case executes", "Execution falls through to the next case", "The default case runs"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "A loop iterates through values from 1 to 10, but skips printing the value 5. Which loop control statement is most appropriate for this behavior?",
+        "options": ["break", "return", "continue", "exit"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which loop is generally preferred when the number of iterations is known before the loop starts executing?",
+        "options": ["while", "do while", "for", "switch"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "If a condition inside a while loop always evaluates to true and no break statement is used, what will be the effect on program execution?",
+        "options": ["Loop runs once", "Loop stops automatically", "Infinite execution", "Condition resets"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "A program uses nested if statements to evaluate multiple related conditions. What is the primary advantage of nested if structures?",
+        "options": ["Faster execution", "Reduced memory usage", "Handling dependent conditions", "Replacing loops"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which logical operator is best used when a program must execute code if either one of two conditions is true?",
+        "options": ["&&", "||", "!", "==="],
+        "correctAnswer": 1
+      },
+      {
+        "text": "In loop-based logic, what is the primary role of the loop counter variable?",
+        "options": ["Store output", "Control iteration count", "Handle conditions", "Return values"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "A switch statement is most suitable in which of the following scenarios?",
+        "options": ["Checking range of values", "Evaluating boolean expressions", "Comparing fixed menu options", "Running infinite loops"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which decision structure allows checking conditions in a sequential order until one condition evaluates to true?",
+        "options": ["if", "nested if", "if else if", "switch"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which operator is commonly used in loop conditions to ensure a value stays within a specific numeric range?",
+        "options": ["Logical AND", "Assignment", "Increment", "Negation"],
+        "correctAnswer": 0
+      },
+      {
+        "text": "If a break statement is placed inside a loop, what is its immediate effect when executed?",
+        "options": ["Skips current iteration", "Stops loop execution", "Restarts loop", "Ends program"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which loop structure checks its condition before executing the loop body for the first time?",
+        "options": ["do while", "while", "for each", "switch"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "A developer wants to repeatedly ask for user input until a valid value is entered. Which loop type is most suitable?",
+        "options": ["for", "while", "switch", "if"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which comparison operator ensures that two values are not equal in both value and type?",
+        "options": ["!=", "!==", "==", "<>"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "In complex loop logic, why is the continue statement preferred over break in some cases?",
+        "options": ["Ends program safely", "Skips unnecessary iterations", "Improves memory", "Avoids conditions"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which condition will correctly check that a number is greater than 10 but less than or equal to 50?",
+        "options": ["x > 10 || x <= 50", "x > 10 && x <= 50", "x >= 10 && x < 50", "x < 10 && x > 50"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which structure is best suited for implementing a grading system based on exact marks?",
+        "options": ["while", "if else", "switch", "do while"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which logical operator reverses the result of a boolean condition inside decision making?",
+        "options": ["&&", "||", "!", "!="],
+        "correctAnswer": 2
+      },
+      {
+        "text": "What happens if the loop condition is false at the beginning of a do while loop?",
+        "options": ["Loop never runs", "Loop runs once", "Syntax error", "Program crashes"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which loop is most commonly used for iterating over a known range of numeric values?",
+        "options": ["while", "do while", "for", "switch"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "In decision making, which operator is used to compare whether one value is greater than another?",
+        "options": ["=", "==", ">", "<"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which scenario can most easily lead to an infinite loop if not handled properly?",
+        "options": ["Incorrect condition update", "Using switch", "Using break", "Using continue"],
+        "correctAnswer": 0
+      },
+      {
+        "text": "Why are logical operators often combined with comparison operators in loop conditions?",
+        "options": ["To reduce syntax", "To evaluate complex conditions", "To end loops early", "To assign values"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "Which control structure allows repeating a block of code while a condition remains true?",
+        "options": ["if", "switch", "loop", "function"],
+        "correctAnswer": 2
+      },
+      {
+        "text": "Which statement is best used to immediately stop checking further conditions inside a loop or switch?",
+        "options": ["continue", "break", "return", "pass"],
+        "correctAnswer": 1
+      },
+      {
+        "text": "In exam-oriented logic questions, which mistake most commonly causes unexpected loop behavior?",
+        "options": ["Using switch", "Wrong comparison operator", "Missing semicolon", "Using const"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+]
