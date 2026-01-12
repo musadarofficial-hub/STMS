@@ -4,7 +4,7 @@
     "title": "JavaScript Certification Test (Domain 4 & 5)",
     "instructions":"You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
     "timeLimit": 15,
-    "passingPercentage": 80,
+    "passingPercentage": 75,
     "questions": [
       {
         "text": "A developer writes a function that may throw an error due to invalid input. They want to ensure that a cleanup message is logged regardless of whether an error occurs or not. Which block of JavaScript error handling guarantees execution in all cases?",
