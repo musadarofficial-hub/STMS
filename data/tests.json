@@ -2,6 +2,7 @@
   {
     "id": "JS-CH4-CH5",
     "title": "JavaScript Certification Test (Domain 4 & 5)",
+    "instructions":"You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
     "timeLimit": 15,
     "passingPercentage": 80,
     "questions": [
