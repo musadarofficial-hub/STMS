@@ -1,2 +1,111 @@
 [
+{
+"id": "JS-CH1",
+"title": "JavaScript Certification Test (Chapter 1.1 & 1.2)",
+"instructions": "You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
+"timeLimit": 10,
+"passingPercentage": 80,
+"questions": [
+{
+"text": "A developer writes: let total = 10 + 5 * 2; console.log(total); What will be printed?",
+"options": ["30", "20", "25", "40"],
+"correctAnswer": 1
+},
+{
+"text": "Consider: let x = 5; console.log(x++); console.log(++x); What is printed?",
+"options": ["5 then 6", "6 then 7", "5 then 7", "6 then 6"],
+"correctAnswer": 2
+},
+{
+"text": "A student writes: let y = 10; y += 5; y %= 4; console.log(y); What is the output?",
+"options": ["3", "2", "1", "0"],
+"correctAnswer": 0
+},
+{
+"text": "What will be the output? let x = 5; console.log(x++ + ++x);",
+"options": ["11", "12", "13", "10"],
+"correctAnswer": 1
+},
+{
+"text": "A developer writes: let total = 20; total =+ 10; total += 5; console.log(total); What is printed?",
+"options": ["35", "30", "15", "25"],
+"correctAnswer": 2
+},
+{
+"text": "Which naming convention is correctly applied for a constant storing PI value?",
+"options": ["const pi = 3.14;", "const Pi = 3.14;", "const PI = 3.14;", "const pI = 3.14;"],
+"correctAnswer": 2
+},
+{
+"text": "Which of the following is the correct naming for a class?",
+"options": ["class gameManager {}", "class GameManager {}", "class gamemanager {}", "class GAME_MANAGER {}"],
+"correctAnswer": 1
+},
+{
+"text": "Which variable name follows camelCase correctly?",
+"options": ["user_name", "UserName", "username", "userName"],
+"correctAnswer": 3
+},
+{
+"text": "A developer enables strict mode and writes: x = 10; console.log(x); What happens?",
+"options": ["Prints 10", "Prints undefined", "Throws error because x is not declared", "Ignores strict mode"],
+"correctAnswer": 2
+},
+{
+"text": "Which statement about strict mode is TRUE?",
+"options": ["It allows undeclared variables", "It prevents syntax errors", "It enforces cleaner and safer JavaScript", "It disables debugging"],
+"correctAnswer": 2
+},
+{
+"text": "Which of the following cannot be used as a variable name?",
+"options": ["returnValue", "totalPrice", "class", "userData"],
+"correctAnswer": 2
+},
+{
+"text": "Which operator returns the remainder of a division?",
+"options": ["/", "%", "//", "*"],
+"correctAnswer": 1
+},
+{
+"text": "A developer wants to pause execution at a specific line to inspect variables. Which approach should be used?",
+"options": ["console.warn()", "console.table()", "debugger", "console.error()"],
+"correctAnswer": 2
+},
+{
+"text": "If x = 10 and y = 3, which statement returns 1?",
+"options": ["x / y", "x % y", "y % x", "y / x"],
+"correctAnswer": 1
+},
+{
+"text": "Which statement correctly represents the operation x = x - 1;",
+"options": ["x = -1;", "x--;", "x - -;", "All of them"],
+"correctAnswer": 1
+},
+{
+"text": "Consider the following code: var a = 6; var b = 5; var res = a * b; console.log(res); debugger; console.log('Executed'); What will be displayed in the console?",
+"options": ["res and Executed", "30 and Executed", "30", "res"],
+"correctAnswer": 1
+},
+{
+"text": "You want a message to appear only if the browser does NOT support JavaScript. Which element should be used?",
+"options": ["script", "noscript", "Both script and noscript", "None of them"],
+"correctAnswer": 1
+},
+{
+"text": "What is the final value of score? let score = 10; score += 5; score -= 3; score *= 2; score /= 4; score %= 4; console.log(score);",
+"options": ["1", "2", "3", "0"],
+"correctAnswer": 1
+},
+{
+"text": "Which statement correctly describes x++?",
+"options": ["Increments first, then returns value", "Returns value, then increments", "Multiplies by 1", "Decreases value"],
+"correctAnswer": 1
+},
+{
+"text": "A developer is testing code and wants to pause execution to inspect variable values. Which keyword should be inserted?",
+"options": ["pause", "stop", "debugger", "break"],
+"correctAnswer": 2
+}
+]
+}
 ]
