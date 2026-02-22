@@ -3,7 +3,7 @@
 "id": "JS-CH1",
 "title": "JavaScript Certification Test (Chapter 1.1 & 1.2)",
 "instructions": "You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
-"timeLimit": 10,
+"timeLimit": 12,
 "passingPercentage": 80,
 "questions": [
 {
@@ -84,7 +84,7 @@
 {
 "text": "Consider the following code: var a = 6; var b = 5; var res = a * b; console.log(res); debugger; console.log('Executed'); What will be displayed in the console?",
 "options": ["res and Executed", "30 and Executed", "30", "res"],
-"correctAnswer": 1
+"correctAnswer": 2
 },
 {
 "text": "You want a message to appear only if the browser does NOT support JavaScript. Which element should be used?",
