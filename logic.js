@@ -196,7 +196,7 @@
                     history.go(1);
                 };
 
-                UI.setHeader('Welcome To Blacksiege STMS Portal', 'Please login to continue');
+                UI.setHeader('Welcome To STMS Portal', 'Please login to continue');
                 UI.render(`
                     <div class="login-container">
                         <div class="login-selector">
