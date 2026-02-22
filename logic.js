@@ -14,7 +14,7 @@
                     return null;
                 }
             },
-
+    
             initializeData: async () => {
                 try {
                     // Load students from JSON
