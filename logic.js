@@ -12,12 +12,12 @@ document.onkeydown = function(e) {
     return false;
   }
      // Ctrl+Shift+J
-    if (e.keyCode == 74) {
+    if (e.ctrlKey && e.shiftKey &&e.keyCode == 74) {
         return false;
     }
 
     // Ctrl+U
-    if (e.keyCode == 85) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 85) {
         return false;
     }
 }
