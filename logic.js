@@ -4,23 +4,29 @@ document.addEventListener("contextmenu", function(e){
   e.preventDefault();
 });
 
-document.onkeydown = function(e) {
-  if(e.keyCode == 123) {
-    return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-    return false;
-  }
-     // Ctrl+Shift+J
-    if (e.ctrlKey && e.shiftKey &&e.keyCode == 74) {
-        return false;
-    }
+document.addEventListener("keydown", function (e) {
 
-    // Ctrl+U
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 85) {
-        return false;
-    }
-}
+  // F12
+  if (e.key === "F12") {
+    e.preventDefault();
+  }
+
+  // Ctrl + Shift + I
+  if (e.ctrlKey && e.shiftKey && e.key === "I") {
+    e.preventDefault();
+  }
+
+  // Ctrl + Shift + J
+  if (e.ctrlKey && e.shiftKey && e.key === "J") {
+    e.preventDefault();
+  }
+
+  // Ctrl + U
+  if (e.ctrlKey && e.key === "u") {
+    e.preventDefault();
+  }
+
+});
 
       // ==================== JSON DATA LOADER ====================
         const DataLoader = {
