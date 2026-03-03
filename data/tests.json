@@ -13,12 +13,12 @@
 },
 {
 "text": "A company wants to reuse the same JavaScript file across multiple web pages and benefit from browser caching. Which approach should be implemented?",
-"options": ["Inline JavaScript", "Internal <script> block", "External JavaScript file", "Embedded CSS"],
+"options": ["Inline JavaScript", "Internal script block", "External JavaScript file", "Embedded CSS"],
 "correctAnswer": 2
 },
 {
 "text": "A webpage throws 'undefined element' errors because JavaScript executes before the DOM loads. What is the best practice to resolve this?",
-"options": ["Place scripts inside <head>", "Use inline scripts only", "Place scripts before </body>", "Remove external scripts"],
+"options": ["Place scripts inside head", "Use inline scripts only", "Place scripts before /body", "Remove external scripts"],
 "correctAnswer": 2
 },
 {
