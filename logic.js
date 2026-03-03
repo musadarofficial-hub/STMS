@@ -765,6 +765,19 @@ document.addEventListener("keydown", function (e) {
 
         // ==================== STUDENT FUNCTIONS ====================
         const Student = {
+            handleTabChange: () => {
+    if (State.currentTest && document.hidden) {
+        alert("You left the test tab. Test will be submitted.");
+        Student.submitTest(true);
+    }
+},
+
+handleWindowBlur: () => {
+    if (State.currentTest) {
+        alert("You switched window. Test will be submitted.");
+        Student.submitTest(true);
+    }
+},
             viewTest: (testId) => {
                 const test = DB.tests.findById(testId);
                 if (!test) return;
@@ -796,6 +809,9 @@ document.addEventListener("keydown", function (e) {
             },
             startTest: () => {
                 FullscreenManager.enable();
+                // Auto submit if user leaves tab
+document.addEventListener("visibilitychange", Student.handleTabChange);
+window.addEventListener("blur", Student.handleWindowBlur);
                 // Prevent navigation during test
                 window.onpopstate = (e) => {
                     e.preventDefault();
@@ -868,6 +884,8 @@ document.addEventListener("keydown", function (e) {
             },
             submitTest: (timeUp = false) => {
                 FullscreenManager.exit();
+                document.removeEventListener("visibilitychange", Student.handleTabChange);
+window.removeEventListener("blur", Student.handleWindowBlur);
                 if (!timeUp && !confirm('Are you sure you want to submit the test?')) {
                     return;
                 }
