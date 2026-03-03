@@ -795,6 +795,7 @@ document.addEventListener("keydown", function (e) {
                 `);
             },
             startTest: () => {
+                FullscreenManager.enable();
                 // Prevent navigation during test
                 window.onpopstate = (e) => {
                     e.preventDefault();
@@ -866,6 +867,7 @@ document.addEventListener("keydown", function (e) {
                 State.userAnswers[questionIndex] = answerIndex;
             },
             submitTest: (timeUp = false) => {
+                FullscreenManager.exit();
                 if (!timeUp && !confirm('Are you sure you want to submit the test?')) {
                     return;
                 }
@@ -876,7 +878,7 @@ document.addEventListener("keydown", function (e) {
                     const timerDiv = document.getElementById('testTimer');
                     if (timerDiv) timerDiv.remove();
                 }
-                
+                State.testStartTime = null;
                 // Calculate results
                 const test = State.currentTest;
                 let correct = 0;
@@ -966,4 +968,54 @@ document.addEventListener("keydown", function (e) {
                 e.returnValue = '';
             }
         });
-    
+    // ==================== FULLSCREEN CONTROL ====================
+
+const FullscreenManager = {
+    enable: () => {
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        }
+    },
+
+    exit: () => {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    },
+
+    createOverlay: () => {
+        if (document.getElementById("fullscreenOverlay")) return;
+
+        const overlay = document.createElement("div");
+        overlay.id = "fullscreenOverlay";
+        overlay.className = "fullscreen-overlay";
+        overlay.innerHTML = `
+            <div class="fullscreen-box">
+                <h2>⚠ Fullscreen Required</h2>
+                <p>You exited fullscreen mode.<br>
+                Please return to fullscreen to continue the test.</p>
+                <button class="btn btn-primary" onclick="FullscreenManager.enable()">Return to Fullscreen</button>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+    },
+
+    removeOverlay: () => {
+        const overlay = document.getElementById("fullscreenOverlay");
+        if (overlay) overlay.remove();
+    },
+
+    monitor: () => {
+        document.addEventListener("fullscreenchange", () => {
+            if (State.currentTest && State.testStartTime && !document.fullscreenElement) {
+                FullscreenManager.createOverlay();
+            } else {
+                FullscreenManager.removeOverlay();
+            }
+        });
+    }
+};
+
+// Start monitoring immediately
+FullscreenManager.monitor();

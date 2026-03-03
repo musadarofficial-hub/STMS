@@ -496,3 +496,33 @@
          border-radius: 5px;
          font-weight: 600;
      }
+     /* ================= FULLSCREEN OVERLAY ================= */
+
+.fullscreen-overlay {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.fullscreen-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.fullscreen-box h2 {
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+.fullscreen-box p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
