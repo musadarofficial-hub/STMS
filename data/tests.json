@@ -225,6 +225,36 @@
 "text":"A developer wants to check whether the array fruits already contains the value Mango before adding it again. Which method returns a boolean indicating presence of the value?",
 "options":["search","includes","indexOf","slice"],
 "correctAnswer":1
+},
+{
+"text":"A developer receives numeric values from an external API but the values arrive as strings. The application must perform mathematical calculations such as addition and multiplication with these values. Which approach ensures the values behave as numbers rather than text during calculations?",
+"options":["Use typeof before calculations","Convert the values using Number() or parseFloat()","Store them inside arrays","Use toLocaleString()"],
+"correctAnswer":1
+},
+{
+"text":"A financial reporting tool must display large monetary values with commas separating thousands for readability. The developer wants the formatting to follow regional conventions such as currency symbols and decimal separators. Which JavaScript method should be used?",
+"options":["toPrecision()","toLocaleString()","toFixed()","parseFloat()"],
+"correctAnswer":1
+},
+{
+"text":"A developer declares an array containing product names and later accidentally overwrites one element by assigning a new value to fruits[2]. What does this behavior demonstrate about JavaScript arrays?",
+"options":["Array elements are immutable","Array elements can be modified using index assignment","Arrays cannot store strings","Array indexes start from 1"],
+"correctAnswer":1
+},
+{
+"text":"An application stores product categories inside an array and needs to determine whether the category Electronics already exists before adding it again. Which method directly returns a boolean value indicating whether the item is present?",
+"options":["indexOf()","includes()","splice()","slice()"],
+"correctAnswer":1
+},
+{
+"text":"A developer writes code that removes an item from an array and also returns a new array containing only a selected range of elements. Which method performs copying of part of an array without modifying the original data structure?",
+"options":["splice()","slice()","shift()","pop()"],
+"correctAnswer":1
+},
+{
+"text":"A developer stores temperature values inside an array and wants to display them in reverse order without manually swapping elements. Which method can reverse the order of all elements within the array?",
+"options":["sort()","reverse()","splice()","indexOf()"],
+"correctAnswer":1
 }
 ]
 }
