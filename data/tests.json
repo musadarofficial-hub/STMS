@@ -3,158 +3,228 @@
 "id": "JS-CH1-ADV",
 "title": "JavaScript Certification Test (Domain 1)",
 "instructions": "You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
-"timeLimit": 25,
+"timeLimit": 35,
 "passingPercentage": 80,
 "questions": [
 {
-"text": "A developer adds JavaScript directly inside an HTML button using onclick. As the project grows, the code becomes difficult to maintain. Which scripting approach is being used?",
-"options": ["External script", "Internal script", "Inline script", "Deferred script"],
-"correctAnswer": 2
+"text":"A developer is building a financial calculator where the value of taxRate must remain constant throughout the entire program execution. Other variables may change during calculations. Which variable declaration approach best enforces this requirement and prevents accidental reassignment?",
+"options":["var taxRate = 0.15","let taxRate = 0.15","const taxRate = 0.15","number taxRate = 0.15"],
+"correctAnswer":2
 },
 {
-"text": "A company wants to reuse the same JavaScript file across multiple web pages and benefit from browser caching. Which approach should be implemented?",
-"options": ["Inline JavaScript", "Internal script block", "External JavaScript file", "Embedded CSS"],
-"correctAnswer": 2
+"text":"A development team is refactoring older JavaScript code that uses function scoped variables. They want to modernize the code so that variables exist only inside the block where they are declared. Which keyword should replace most of the legacy declarations?",
+"options":["let","var","define","static"],
+"correctAnswer":0
 },
 {
-"text": "A webpage throws 'undefined element' errors because JavaScript executes before the DOM loads. What is the best practice to resolve this?",
-"options": ["Place scripts inside head", "Use inline scripts only", "Place scripts before /body", "Remove external scripts"],
-"correctAnswer": 2
+"text":"A student writes a program where a variable is declared but no value is assigned before it is logged to the console. The developer wants to understand what JavaScript will automatically assign to that variable at runtime.",
+"options":["null","undefined","false","NaN"],
+"correctAnswer":1
 },
 {
-"text": "Two script files are included: a.js and b.js. File b.js depends on variables declared in a.js. How should they be ordered?",
-"options": ["b.js before a.js", "Both inside <head>", "a.js before b.js", "Order does not matter"],
-"correctAnswer": 2
+"text":"An application needs to explicitly represent that a database record exists but currently has no value assigned to a field. The developer intentionally sets the variable to represent absence of value rather than an uninitialized state.",
+"options":["undefined","null","false","empty"],
+"correctAnswer":1
 },
 {
-"text": "A web application stops executing when an undefined variable is accessed. Which feature allows the developer to handle the error gracefully?",
-"options": ["Conditional statements", "try...catch block", "console.log()", "setTimeout()"],
-"correctAnswer": 1
+"text":"During debugging, a developer wants to confirm whether a variable currently stores a number, string, or boolean value. Which JavaScript operator should be used to inspect the data type of the variable?",
+"options":["type","typeof","instanceof","checkType"],
+"correctAnswer":1
 },
 {
-"text": "A developer wants certain cleanup code to run whether or not an error occurs. Which block should be used?",
-"options": ["try", "catch", "throw", "finally"],
-"correctAnswer": 3
+"text":"While testing a program, a developer evaluates typeof null and notices the result appears unexpected compared with other primitive types. What value will JavaScript return in this situation?",
+"options":["null","undefined","object","number"],
+"correctAnswer":2
 },
 {
-"text": "In a financial application, division by zero must immediately stop execution with a custom message. Which statement should be used?",
-"options": ["console.error()", "alert()", "throw new Error()", "debugger"],
-"correctAnswer": 2
+"text":"A web form collects numeric input but the data arrives as text because it is entered by the user. The developer must convert the string value 45.67 into a numeric value while preserving the decimal portion.",
+"options":["parseInt","parseFloat","toString","slice"],
+"correctAnswer":1
 },
 {
-"text": "A developer needs to access the error name and message when handling exceptions. Which object provides these properties?",
-"options": ["console", "window", "Error object", "navigator"],
-"correctAnswer": 2
+"text":"A system processes inventory quantities that must always be stored as integers. The input arrives as the string value 120.75 and the decimal portion should be ignored during conversion.",
+"options":["parseFloat","parseInt","Number","toLocaleString"],
+"correctAnswer":1
 },
 {
-"text": "Accessing a variable that was never declared results in which type of error?",
-"options": ["TypeError", "SyntaxError", "ReferenceError", "RangeError"],
-"correctAnswer": 2
+"text":"An application receives user input and must determine whether the provided value represents a valid number before performing calculations. Which function best detects values that are not numeric?",
+"options":["Number","parseFloat","isNaN","typeof"],
+"correctAnswer":2
 },
 {
-"text": "A website displays a welcome popup message when loaded. Which BOM method is most appropriate?",
-"options": ["document.write()", "window.alert()", "navigator.alert()", "screen.alert()"],
-"correctAnswer": 1
+"text":"A developer evaluates isNaN('Hello') while validating form input. What will the function return because the value cannot be converted into a number?",
+"options":["false","true","undefined","0"],
+"correctAnswer":1
 },
 {
-"text": "A payment system opens a new tab for transaction processing. Which method is used?",
-"options": ["window.prompt()", "window.confirm()", "window.open()", "window.location()"],
-"correctAnswer": 2
+"text":"A financial dashboard displays product prices and must always show exactly two digits after the decimal point even when rounding is required. Which number method is most appropriate?",
+"options":["toPrecision","toFixed","parseFloat","toLocaleString"],
+"correctAnswer":1
 },
 {
-"text": "A developer schedules a function to execute once after 5 seconds. Which method should be used?",
-"options": ["setInterval()", "clearInterval()", "setTimeout()", "clearTimeout()"],
-"correctAnswer": 2
+"text":"A scientific application must round values to a specified number of significant digits instead of a fixed number of decimal places. Which JavaScript method should be used?",
+"options":["toPrecision","toFixed","roundDigits","parseInt"],
+"correctAnswer":0
 },
 {
-"text": "A repeating timer must be stopped once a counter reaches 5. Which function stops the interval?",
-"options": ["stopInterval()", "clearInterval()", "clearTimeout()", "endInterval()"],
-"correctAnswer": 1
+"text":"An international e commerce platform wants to display product prices formatted according to regional currency settings such as commas and currency symbols. Which method best supports this formatting requirement?",
+"options":["toPrecision","toLocaleString","parseFloat","toFixed"],
+"correctAnswer":1
 },
 {
-"text": "A variable declared using var is accessed via window.variableName. Why is this possible?",
-"options": ["var creates block scope", "var attaches to the window object globally", "let behaves the same as var", "const attaches to document"],
-"correctAnswer": 1
+"text":"A developer needs to display the message Hello Musa using a variable named name and modern JavaScript syntax that supports embedded expressions inside strings. Which technique should be used?",
+"options":["Single quotes","Double quotes","Template literals","Concatenation only"],
+"correctAnswer":2
 },
 {
-"text": "A developer wants to detect a user's screen resolution to optimize layout. Which object provides this information?",
-"options": ["document", "window", "navigator", "screen"],
-"correctAnswer": 3
+"text":"A security audit identifies a section of code where a string containing user input is passed directly into a function that executes it as JavaScript code. Which function likely caused this vulnerability?",
+"options":["parseInt","eval","Number","typeof"],
+"correctAnswer":1
 },
 {
-"text": "An analytics tool detects the user's browser language to localize content. Which property should be used?",
-"options": ["navigator.platform", "navigator.language", "navigator.appName", "screen.colorDepth"],
-"correctAnswer": 1
+"text":"A developer wants to store a list of student names in a single variable instead of creating separate variables for each name. Which data structure is most appropriate for this task?",
+"options":["Object","Array","Function","Primitive variable"],
+"correctAnswer":1
 },
 {
-"text": "A web app displays an 'Offline Mode' message when the internet connection is lost. Which property can detect this?",
-"options": ["navigator.onLine", "window.status", "screen.availWidth", "document.readyState"],
-"correctAnswer": 0
+"text":"A programmer creates an array containing three fruit names and needs to access the second item. Considering JavaScript indexing rules, which index should be used?",
+"options":["0","1","2","3"],
+"correctAnswer":1
 },
 {
-"text": "Why are alert(), confirm(), and prompt() discouraged in modern UX design?",
-"options": ["They are asynchronous", "They block user interaction", "They require plugins", "They are deprecated"],
-"correctAnswer": 1
+"text":"An application dynamically adds a new item to the end of a shopping list stored in an array. Which method should be used to perform this operation?",
+"options":["push","shift","slice","splice"],
+"correctAnswer":0
 },
 {
-"text": "Which statement best describes the Browser Object Model (BOM)?",
-"options": ["Manipulates HTML structure", "Controls CSS styling", "Interacts with browser environment", "Manages database operations"],
-"correctAnswer": 2
+"text":"A music playlist application removes the most recently added track when the user clicks an undo button. Which array method performs this action?",
+"options":["shift","splice","pop","slice"],
+"correctAnswer":2
 },
 {
-"text": "A developer logs detailed browser and OS information for debugging purposes. Which property provides complete details?",
-"options": ["navigator.platform", "navigator.language", "navigator.userAgent", "navigator.appName"],
-"correctAnswer": 2
+"text":"A developer needs to add a high priority task to the beginning of an existing task list stored in an array. Which method should be used?",
+"options":["push","unshift","shift","splice"],
+"correctAnswer":1
 },
 {
-"text": "Which timing function executes code repeatedly at fixed time intervals?",
-"options": ["setTimeout()", "setInterval()", "clearTimeout()", "delay()"],
-"correctAnswer": 1
+"text":"An application processes a queue of customer requests where the earliest request must be removed first. Which array method removes the first element from the list?",
+"options":["pop","shift","splice","slice"],
+"correctAnswer":1
 },
 {
-"text": "A developer updates a shopping cart total using score += 5. What does this operator do?",
-"options": ["Assigns a value", "Adds and assigns", "Compares values", "Multiplies values"],
-"correctAnswer": 1
+"text":"A developer must locate the position of the item Banana within an array of fruit names before removing it. Which method returns the index of that value?",
+"options":["find","includes","indexOf","search"],
+"correctAnswer":2
 },
 {
-"text": "A developer accidentally writes a =+ 5 instead of a += 5. What happens?",
-"options": ["Adds 5 correctly", "Causes syntax error", "Assigns positive 5 to a", "Multiplies value"],
-"correctAnswer": 2
+"text":"After determining the index of a specific item in an array, the developer removes exactly one element from that position without affecting the rest of the list. Which method allows this modification?",
+"options":["slice","splice","pop","reverse"],
+"correctAnswer":1
 },
 {
-"text": "A developer enables strict mode and writes x = 10;. What happens?",
-"options": ["Prints 10", "Prints undefined", "Throws error because x is not declared", "Ignores strict mode"],
-"correctAnswer": 2
+"text":"A developer wants to copy the first three elements from an array while leaving the original array unchanged. Which method is designed for this purpose?",
+"options":["splice","slice","cut","shift"],
+"correctAnswer":1
 },
 {
-"text": "Which operator returns the remainder of a division?",
-"options": ["/", "*", "%", "+="],
-"correctAnswer": 2
+"text":"A program stores a list of student names and needs to arrange them alphabetically for display. Which method performs this operation?",
+"options":["reverse","sort","order","arrange"],
+"correctAnswer":1
 },
 {
-"text": "A developer needs to pause execution to inspect variables in DevTools. Which keyword should be used?",
-"options": ["pause", "stop", "debugger", "break"],
-"correctAnswer": 2
+"text":"A developer needs to invert the order of elements in an existing array so that the last element becomes the first. Which method performs this action?",
+"options":["sort","reverse","shift","splice"],
+"correctAnswer":1
 },
 {
-"text": "You have an external JS file called logic located inside a folder named script. What is the proper reference to include this file?",
-"options": ["src=\"script/logic.js\"", "src=\"/logic.js\"", "src=\"logic.js\"", "None"],
-"correctAnswer": 0
+"text":"A system checks whether a particular product name already exists in an array before adding a duplicate entry. Which method returns a boolean indicating the presence of the value?",
+"options":["indexOf","includes","search","slice"],
+"correctAnswer":1
 },
 {
-"text": "If console.log() is used in both an inline script and an external script, which statement is correct?",
-"options": ["Inline console prints first", "External console prints first", "It depends upon order of placement", "Both merge automatically"],
-"correctAnswer": 2
+"text":"A developer is creating a two dimensional grid to represent seats in a classroom where rows and columns must be accessed individually. Which data structure best represents this layout?",
+"options":["Object list","Nested arrays","String collection","Single variable"],
+"correctAnswer":1
 },
 {
-"text": "Consider the following code: try{ var _name=\"Ali\"; alert(_Name);} catch(e){alert(e.message);} finally{ alert(\"Welcome\");} What will be displayed?",
-"options": ["Error message", "Welcome", "Ali and Welcome", "Error message and Welcome"],
-"correctAnswer": 3
+"text":"Given a two dimensional array named matrix, a developer accesses matrix[1][2]. What does this expression represent?",
+"options":["Second row third column","Third row second column","First row second column","Second row first column"],
+"correctAnswer":0
 },
 {
-"text": "You are developing a feature to display the browser's screen width and height. Which properties should be used?",
-"options": ["screenWidth and screenHeight", "screen.width and screen.height", "Screen.Width and ScreenHeight", "screen.Width and screen.Height"],
-"correctAnswer": 1
+"text":"While debugging an application, a developer notices incorrect results when sorting numbers using the default sort method. What is the primary reason this issue occurs?",
+"options":["Numbers cannot be sorted","Sorting treats numbers as strings","Arrays only store text","JavaScript disables numeric sorting"],
+"correctAnswer":1
+},
+{
+"text":"A developer wants to correctly sort numeric values inside an array. Which approach ensures numbers are compared mathematically instead of alphabetically?",
+"options":["numbers.sort()","numbers.reverse()","numbers.sort((a,b)=>a-b)","numbers.indexOf()"],
+"correctAnswer":2
+},
+{
+"text":"A developer reviews a colleague's code where arrays store strings, numbers, and objects together without clear purpose. Why is this practice often discouraged in professional codebases?",
+"options":["Arrays cannot store multiple types","It reduces readability and maintainability","It causes syntax errors","JavaScript forbids mixed types"],
+"correctAnswer":1
+},
+{
+"text":"A developer logs typeof username where username stores the value Ali. What result should appear in the console?",
+"options":["text","string","object","char"],
+"correctAnswer":1
+},
+{
+"text":"A variable called price stores the value 12.3456 and must be displayed with exactly two decimal places for billing purposes. What will be the resulting formatted value using toFixed(2)?",
+"options":["12.34","12.35","12.3","12.346"],
+"correctAnswer":1
+},
+{
+"text":"A developer formats the number 123.456 using toPrecision(4). What is the most accurate representation based on four significant digits?",
+"options":["123.456","123.5","123.45","123.0"],
+"correctAnswer":1
+},
+{
+"text":"A developer converts the string 123 into a number using Number('123'). What type will typeof return for the resulting value?",
+"options":["string","number","object","boolean"],
+"correctAnswer":1
+},
+{
+"text":"A developer converts a number variable into a string using the toString method. What is the primary purpose of this operation?",
+"options":["Increase precision","Change data type","Format arrays","Remove decimals"],
+"correctAnswer":1
+},
+{
+"text":"An application attempts to perform calculations using values obtained from user input fields which always arrive as text. Why must explicit type conversion be performed before mathematical operations?",
+"options":["Strings cannot be displayed","Text input may cause incorrect arithmetic","JavaScript forbids string variables","Arrays require numbers"],
+"correctAnswer":1
+},
+{
+"text":"A developer writes code that dynamically evaluates mathematical expressions stored as strings using eval. What is the main reason modern development practices discourage this approach?",
+"options":["It increases file size","It can execute untrusted code","It disables arrays","It prevents debugging"],
+"correctAnswer":1
+},
+{
+"text":"A developer defines an empty array that will later store product names retrieved from an API. Which syntax correctly creates this empty array?",
+"options":["let products = []","let products = {}","let products = ()","let products = <>"],
+"correctAnswer":0
+},
+{
+"text":"A developer checks the total number of elements stored in an array named items. Which property should be used?",
+"options":["items.count","items.size","items.length","items.total"],
+"correctAnswer":2
+},
+{
+"text":"A developer copies part of an array into a new variable but accidentally modifies the original data because the wrong method was used. Which method should have been chosen to avoid modifying the original array?",
+"options":["splice","slice","shift","pop"],
+"correctAnswer":1
+},
+{
+"text":"A team designs a playlist feature where songs can be appended to the end of the list and removed from the end when the user presses undo. Which two methods are most appropriate for this behavior?",
+"options":["push and pop","shift and unshift","slice and splice","sort and reverse"],
+"correctAnswer":0
+},
+{
+"text":"A developer wants to check whether the array fruits already contains the value Mango before adding it again. Which method returns a boolean indicating presence of the value?",
+"options":["search","includes","indexOf","slice"],
+"correctAnswer":1
 }
 ]
 }
