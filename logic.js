@@ -27,7 +27,38 @@ document.addEventListener("keydown", function (e) {
   }
 
 });
+// ==================== COPY PROTECTION ====================
 
+// Disable text selection
+document.addEventListener("selectstart", function(e){
+  e.preventDefault();
+});
+
+// Disable copy event
+document.addEventListener("copy", function(e){
+  e.preventDefault();
+  alert("Copying is not allowed during the test.");
+});
+
+// Block common copy shortcuts
+document.addEventListener("keydown", function(e){
+
+  // Ctrl + C
+  if (e.ctrlKey && e.key === "c") {
+    e.preventDefault();
+  }
+
+  // Ctrl + A (select all)
+  if (e.ctrlKey && e.key === "a") {
+    e.preventDefault();
+  }
+
+  // Ctrl + X (cut)
+  if (e.ctrlKey && e.key === "x") {
+    e.preventDefault();
+  }
+
+});
       // ==================== JSON DATA LOADER ====================
         const DataLoader = {
             loadJSON: async (filename) => {
