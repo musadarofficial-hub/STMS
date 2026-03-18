@@ -314,7 +314,7 @@
 {
 "text":"Evaluate the code contestants='Robin, Shawn, Patsy'; console.log(contestants.substr(7,6); What will be the output?)",
 "options":["Shawn,","S","hawn, P","Shawn"],
-"correctAnswer":1
+"correctAnswer":0
 }
 
 ]
