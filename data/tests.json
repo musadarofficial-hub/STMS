@@ -1,261 +1,326 @@
 [
 {
-"id": "JS-CH2-ADV",
-"title": "JavaScript Certification Test (2.1 & 2.2)",
-"instructions": "You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
-"timeLimit": 40,
-"passingPercentage": 80,
-"questions": [
+"id":"JS-CH2-ADV",
+"title":"JavaScript Certification Test (2.3 to 2.5)",
+"instructions":"You have only one attempt. Read each scenario carefully before selecting the best answer.",
+"timeLimit":45,
+"passingPercentage":75,
+"questions":[
+
 {
-"text":"A developer is building a financial calculator where the value of taxRate must remain constant throughout the entire program execution. Other variables may change during calculations. Which variable declaration approach best enforces this requirement and prevents accidental reassignment?",
-"options":["var taxRate = 0.15","let taxRate = 0.15","const taxRate = 0.15","number taxRate = 0.15"],
+"text":"A developer is designing an application to manage car data where each car must store properties such as brand, model, and year, along with a function to start the engine. Which JavaScript structure is most suitable to represent this real-world entity efficiently?",
+"options":["Array","Object","String","Number"],
+"correctAnswer":1
+},
+{
+"text":"A developer accesses object properties using both car.brand and car['brand'] in different parts of the code. What is the primary reason for using bracket notation instead of dot notation in some scenarios?",
+"options":["It executes faster","It allows dynamic property names","It prevents errors","It converts values to string"],
+"correctAnswer":1
+},
+{
+"text":"An application dynamically adds a property email to a user object using a variable key. Which approach correctly achieves this behavior?",
+"options":["user.email = value","user.key = value","user[key] = value","user.add(key,value)"],
 "correctAnswer":2
 },
 {
-"text":"A development team is refactoring older JavaScript code that uses function scoped variables. They want to modernize the code so that variables exist only inside the block where they are declared. Which keyword should replace most of the legacy declarations?",
-"options":["let","var","define","static"],
+"text":"A developer wants to verify whether a specific property exists in an object before accessing it. Which operator provides a direct boolean result for this check?",
+"options":["typeof","in","instanceof","has"],
+"correctAnswer":1
+},
+{
+"text":"A developer removes a property color from an object to clean up unused data. Which keyword is used to perform this operation?",
+"options":["remove","delete","clear","pop"],
+"correctAnswer":1
+},
+{
+"text":"A method inside an object tries to access another property using this.name. What does the this keyword refer to in this context?",
+"options":["Global object","Current object","Parent function","Window object"],
+"correctAnswer":1
+},
+{
+"text":"A developer creates an object using new Object() and later assigns properties individually. What is this approach called?",
+"options":["Object literal","Object instantiation","Object cloning","Object inheritance"],
+"correctAnswer":1
+},
+{
+"text":"A program stores a function inside an object property and calls it using object.method(). What is this function called?",
+"options":["Callback","Constructor","Method","Prototype"],
+"correctAnswer":2
+},
+{
+"text":"A developer defines a method fullName that returns firstName plus lastName. What is the main advantage of using a method instead of storing full name directly?",
+"options":["Faster execution","Dynamic calculation","Less memory","Better syntax"],
+"correctAnswer":1
+},
+{
+"text":"A system logs current date and time using new Date(). What does this constructor return when called without arguments?",
+"options":["Null","String","Current date and time","Only date"],
+"correctAnswer":2
+},
+
+{
+"text":"A developer uses getMonth() and expects January to return 1, but receives 0 instead. What is the reason for this behavior?",
+"options":["Bug in JavaScript","Months are zero-indexed","Timezone issue","Incorrect syntax"],
+"correctAnswer":1
+},
+{
+"text":"A system calculates a future date by adding 7 days to today using setDate(). What concept is being applied?",
+"options":["Date formatting","Date arithmetic","Date parsing","Date conversion"],
+"correctAnswer":1
+},
+{
+"text":"A developer subtracts two Date objects and gets a large numeric value. What does this value represent?",
+"options":["Seconds","Milliseconds difference","Minutes","Hours"],
+"correctAnswer":1
+},
+{
+"text":"An application displays date in user-friendly format using toLocaleDateString(). What is the main benefit of this method?",
+"options":["Faster processing","Localization support","Mathematical operations","Sorting"],
+"correctAnswer":1
+},
+{
+"text":"A countdown timer divides milliseconds by 1000*60*60*24. What is this calculation primarily used for?",
+"options":["Convert to hours","Convert to days","Convert to seconds","Convert to years"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer uses Math.round(4.6) while processing user ratings. What will be the output?",
+"options":["4","5","4.6","Error"],
+"correctAnswer":1
+},
+{
+"text":"A billing system ensures all negative values become positive before calculations. Which method is most suitable?",
+"options":["Math.round","Math.abs","Math.ceil","Math.floor"],
+"correctAnswer":1
+},
+{
+"text":"A developer wants to remove decimal part without rounding while processing numeric input. Which method is correct?",
+"options":["Math.floor","Math.ceil","Math.trunc","Math.round"],
+"correctAnswer":2
+},
+{
+"text":"A developer generates random numbers between 1 and 10 using Math.random(). What additional operation is required?",
+"options":["Math.ceil","Math.floor and scaling","Math.abs","Math.sqrt"],
+"correctAnswer":1
+},
+{
+"text":"A developer needs the largest number from a set of values. Which method directly provides this?",
+"options":["Math.max","Math.min","Math.pow","Math.random"],
+"correctAnswer":0
+},
+
+{
+"text":"A function add(a,b) returns a + b. What is the purpose of the return keyword in this context?",
+"options":["Print output","Send value back","Stop execution","Declare variable"],
+"correctAnswer":1
+},
+{
+"text":"A developer calls a function before defining it and it works successfully. What concept allows this behavior?",
+"options":["Closure","Hoisting","Scope","Callback"],
+"correctAnswer":1
+},
+{
+"text":"A function expression is assigned to a variable and called later. Why might this approach be preferred?",
+"options":["Faster execution","Reusable reference","Automatic execution","Better syntax"],
+"correctAnswer":1
+},
+{
+"text":"An arrow function is written in one line without curly braces. What happens automatically?",
+"options":["Loop executes","Value is returned","Error occurs","Function stops"],
+"correctAnswer":1
+},
+{
+"text":"A variable declared inside a function cannot be accessed outside. What concept does this demonstrate?",
+"options":["Global scope","Local scope","Closure","Prototype"],
+"correctAnswer":1
+},
+
+{
+"text":"A primitive value passed into a function remains unchanged after function execution. What concept explains this behavior?",
+"options":["Pass by reference","Pass by value","Global scope","Hoisting"],
+"correctAnswer":1
+},
+{
+"text":"An object passed into a function gets modified internally. What does this demonstrate?",
+"options":["Pass by value","Pass by reference","Copying","Cloning"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer creates a function without a name and passes it into setTimeout. What type of function is this?",
+"options":["Arrow function","Anonymous function","Callback function","Constructor"],
+"correctAnswer":1
+},
+{
+"text":"A function is passed as an argument to another function and executed later. What is this pattern called?",
+"options":["Recursion","Callback","Hoisting","Scope"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer extracts part of a string using substr(2,4). What does this return?",
+"options":["4 characters starting index 2","Index 2 to 4","Error","Whole string"],
 "correctAnswer":0
 },
 {
-"text":"A student writes a program where a variable is declared but no value is assigned before it is logged to the console. The developer wants to understand what JavaScript will automatically assign to that variable at runtime.",
-"options":["null","undefined","false","NaN"],
+"text":"A developer mistakenly assumes substr(2,4) ends at index 4. What is the correct behavior?",
+"options":["Ends at index 4","Returns 4 characters","Returns 2 characters","Throws error"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer defines a method inside an object that increments age using this.age++. What is the effect of calling this method?",
+"options":["Creates new object","Updates property","Deletes property","Returns undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer formats currency using num.toFixed(2). What does this method ensure?",
+"options":["Integer conversion","2 decimal places","Random values","String removal"],
 "correctAnswer":1
 },
 {
-"text":"An application needs to explicitly represent that a database record exists but currently has no value assigned to a field. The developer intentionally sets the variable to represent absence of value rather than an uninitialized state.",
-"options":["undefined","null","false","empty"],
-"correctAnswer":1
-},
-{
-"text":"During debugging, a developer wants to confirm whether a variable currently stores a number, string, or boolean value. Which JavaScript operator should be used to inspect the data type of the variable?",
-"options":["type","typeof","instanceof","checkType"],
-"correctAnswer":1
-},
-{
-"text":"While testing a program, a developer evaluates typeof null and notices the result appears unexpected compared with other primitive types. What value will JavaScript return in this situation?",
-"options":["null","undefined","object","number"],
+"text":"A developer creates a user object and later wants to access a property whose name is stored inside a variable fieldName. Which approach ensures correct access to that property?",
+"options":["user.fieldName","user['fieldName']","user[fieldName]","user.get(fieldName)"],
 "correctAnswer":2
 },
 {
-"text":"A web form collects numeric input but the data arrives as text because it is entered by the user. The developer must convert the string value 45.67 into a numeric value while preserving the decimal portion.",
-"options":["parseInt","parseFloat","toString","slice"],
+"text":"An application stores multiple related values such as name, age, and city together. The developer chooses an object instead of separate variables. What is the primary advantage of this design choice?",
+"options":["Faster execution","Grouped related data","Reduced memory usage","Automatic validation"],
 "correctAnswer":1
 },
 {
-"text":"A system processes inventory quantities that must always be stored as integers. The input arrives as the string value 120.75 and the decimal portion should be ignored during conversion.",
-"options":["parseFloat","parseInt","Number","toLocaleString"],
-"correctAnswer":1
-},
-{
-"text":"An application receives user input and must determine whether the provided value represents a valid number before performing calculations. Which function best detects values that are not numeric?",
-"options":["Number","parseFloat","isNaN","typeof"],
+"text":"A developer tries to access a property that does not exist in an object. What will JavaScript return in this scenario?",
+"options":["null","0","undefined","false"],
 "correctAnswer":2
 },
 {
-"text":"A developer evaluates isNaN('Hello') while validating form input. What will the function return because the value cannot be converted into a number?",
-"options":["false","true","undefined","0"],
+"text":"A developer wants to loop through object properties but has not yet learned loops. Instead, they manually access properties using dot notation. What is the main limitation of this approach?",
+"options":["Slower execution","Hardcoded access","Security issue","Memory leak"],
 "correctAnswer":1
 },
 {
-"text":"A financial dashboard displays product prices and must always show exactly two digits after the decimal point even when rounding is required. Which number method is most appropriate?",
-"options":["toPrecision","toFixed","parseFloat","toLocaleString"],
+"text":"A developer uses new Date(2000, 0, 1) expecting February but gets January. What is the reason for this unexpected result?",
+"options":["Incorrect syntax","Month indexing starts at 0","Timezone issue","Leap year issue"],
 "correctAnswer":1
 },
 {
-"text":"A scientific application must round values to a specified number of significant digits instead of a fixed number of decimal places. Which JavaScript method should be used?",
-"options":["toPrecision","toFixed","roundDigits","parseInt"],
-"correctAnswer":0
-},
-{
-"text":"An international e commerce platform wants to display product prices formatted according to regional currency settings such as commas and currency symbols. Which method best supports this formatting requirement?",
-"options":["toPrecision","toLocaleString","parseFloat","toFixed"],
+"text":"A system displays time using toLocaleTimeString() every second. What type of data does this method return?",
+"options":["Number","String formatted time","Boolean","Object"],
 "correctAnswer":1
 },
 {
-"text":"A developer needs to display the message Hello Musa using a variable named name and modern JavaScript syntax that supports embedded expressions inside strings. Which technique should be used?",
-"options":["Single quotes","Double quotes","Template literals","Concatenation only"],
+"text":"A developer calculates remaining time for an event by subtracting two Date objects. Which data type is returned from this subtraction?",
+"options":["String","Boolean","Number","Object"],
 "correctAnswer":2
 },
 {
-"text":"A security audit identifies a section of code where a string containing user input is passed directly into a function that executes it as JavaScript code. Which function likely caused this vulnerability?",
-"options":["parseInt","eval","Number","typeof"],
-"correctAnswer":1
-},
-{
-"text":"A developer wants to store a list of student names in a single variable instead of creating separate variables for each name. Which data structure is most appropriate for this task?",
-"options":["Object","Array","Function","Primitive variable"],
-"correctAnswer":1
-},
-{
-"text":"A programmer creates an array containing three fruit names and needs to access the second item. Considering JavaScript indexing rules, which index should be used?",
-"options":["0","1","2","3"],
-"correctAnswer":1
-},
-{
-"text":"An application dynamically adds a new item to the end of a shopping list stored in an array. Which method should be used to perform this operation?",
-"options":["push","shift","slice","splice"],
-"correctAnswer":0
-},
-{
-"text":"A music playlist application removes the most recently added track when the user clicks an undo button. Which array method performs this action?",
-"options":["shift","splice","pop","slice"],
+"text":"A developer wants to ensure a number always rounds up regardless of decimal value. Which method should be used?",
+"options":["Math.round","Math.floor","Math.ceil","Math.trunc"],
 "correctAnswer":2
 },
 {
-"text":"A developer needs to add a high priority task to the beginning of an existing task list stored in an array. Which method should be used?",
-"options":["push","unshift","shift","splice"],
+"text":"A developer wants to always round down a decimal number during price calculations. Which method is most suitable?",
+"options":["Math.ceil","Math.floor","Math.round","Math.abs"],
 "correctAnswer":1
 },
 {
-"text":"An application processes a queue of customer requests where the earliest request must be removed first. Which array method removes the first element from the list?",
-"options":["pop","shift","splice","slice"],
+"text":"A developer needs to determine whether a number is positive, negative, or zero. Which method directly provides this information?",
+"options":["Math.abs","Math.sign","Math.round","Math.sqrt"],
 "correctAnswer":1
 },
 {
-"text":"A developer must locate the position of the item Banana within an array of fruit names before removing it. Which method returns the index of that value?",
-"options":["find","includes","indexOf","search"],
+"text":"A developer uses Math.pow(2,3) in a calculation. What does this expression represent?",
+"options":["2 multiplied by 3","2 raised to power 3","Square root of 2","Random number"],
+"correctAnswer":1
+},
+{
+"text":"A developer needs to calculate the square root of a number entered by a user. Which method should be used?",
+"options":["Math.pow","Math.sqrt","Math.round","Math.abs"],
+"correctAnswer":1
+},
+{
+"text":"A developer generates a random number using Math.random() and multiplies it by 10. Why is Math.floor() often applied afterward?",
+"options":["To convert to string","To remove decimals","To increase range","To avoid errors"],
+"correctAnswer":1
+},
+{
+"text":"A function greet(name = 'Guest') is defined. What happens if the function is called without passing any argument?",
+"options":["Error occurs","Undefined is used","Default value is used","Function stops"],
 "correctAnswer":2
 },
 {
-"text":"After determining the index of a specific item in an array, the developer removes exactly one element from that position without affecting the rest of the list. Which method allows this modification?",
-"options":["slice","splice","pop","reverse"],
+"text":"A developer defines a function but forgets to call it. What will happen?",
+"options":["Function executes automatically","Nothing happens","Error occurs","Value returned"],
 "correctAnswer":1
 },
 {
-"text":"A developer wants to copy the first three elements from an array while leaving the original array unchanged. Which method is designed for this purpose?",
-"options":["splice","slice","cut","shift"],
+"text":"A developer assigns a function to a variable and calls it later. What type of function is this?",
+"options":["Named function","Function expression","Constructor","Callback"],
 "correctAnswer":1
 },
 {
-"text":"A program stores a list of student names and needs to arrange them alphabetically for display. Which method performs this operation?",
-"options":["reverse","sort","order","arrange"],
+"text":"A developer uses an arrow function for a short calculation. What is a key difference compared to traditional functions?",
+"options":["No return","Short syntax","No parameters","Cannot execute"],
 "correctAnswer":1
 },
 {
-"text":"A developer needs to invert the order of elements in an existing array so that the last element becomes the first. Which method performs this action?",
-"options":["sort","reverse","shift","splice"],
+"text":"A developer accesses a global variable inside a function successfully. Why is this allowed?",
+"options":["Local scope","Global scope accessibility","Hoisting","Closure"],
 "correctAnswer":1
 },
 {
-"text":"A system checks whether a particular product name already exists in an array before adding a duplicate entry. Which method returns a boolean indicating the presence of the value?",
-"options":["indexOf","includes","search","slice"],
+"text":"A developer defines a variable inside a function and tries to access it outside, resulting in an error. What is the cause?",
+"options":["Syntax error","Scope limitation","Type mismatch","Memory issue"],
 "correctAnswer":1
 },
 {
-"text":"A developer is creating a two dimensional grid to represent seats in a classroom where rows and columns must be accessed individually. Which data structure best represents this layout?",
-"options":["Object list","Nested arrays","String collection","Single variable"],
+"text":"A developer modifies an object inside a function and sees the change reflected outside. Why does this occur?",
+"options":["Pass by value","Pass by reference","Global scope","Hoisting"],
 "correctAnswer":1
 },
 {
-"text":"Given a two dimensional array named matrix, a developer accesses matrix[1][2]. What does this expression represent?",
-"options":["Second row third column","Third row second column","First row second column","Second row first column"],
-"correctAnswer":0
-},
-{
-"text":"While debugging an application, a developer notices incorrect results when sorting numbers using the default sort method. What is the primary reason this issue occurs?",
-"options":["Numbers cannot be sorted","Sorting treats numbers as strings","Arrays only store text","JavaScript disables numeric sorting"],
+"text":"A developer passes a number into a function and modifies it inside, but original value remains unchanged. Why?",
+"options":["Pass by reference","Pass by value","Scope issue","Callback issue"],
 "correctAnswer":1
 },
 {
-"text":"A developer wants to correctly sort numeric values inside an array. Which approach ensures numbers are compared mathematically instead of alphabetically?",
-"options":["numbers.sort()","numbers.reverse()","numbers.sort((a,b)=>a-b)","numbers.indexOf()"],
+"text":"A developer creates a utility function to format currency using toFixed(2). What type of value does this method return?",
+"options":["Number","String","Boolean","Object"],
+"correctAnswer":1
+},
+{
+"text":"A developer wants to ensure a number displays exactly two decimal places even if unnecessary zeros are added. Which method is appropriate?",
+"options":["Math.round","toFixed","Math.floor","parseInt"],
+"correctAnswer":1
+},
+{
+"text":"A developer uses split(), reverse(), and join() together on a string. What is the main purpose of this combination?",
+"options":["Sorting string","Reversing string","Splitting string","Concatenation"],
+"correctAnswer":1
+},
+{
+"text":"A developer creates a function that returns multiple values such as area and perimeter inside an object. What is this pattern called?",
+"options":["Array return","Object return","Callback return","Loop return"],
+"correctAnswer":1
+},
+{
+"text":"A developer writes a function that accepts parameters but forgets to return a value. What will be returned by default?",
+"options":["null","0","undefined","false"],
 "correctAnswer":2
 },
 {
-"text":"A developer reviews a colleague's code where arrays store strings, numbers, and objects together without clear purpose. Why is this practice often discouraged in professional codebases?",
-"options":["Arrays cannot store multiple types","It reduces readability and maintainability","It causes syntax errors","JavaScript forbids mixed types"],
+"text":"A developer calls a function with fewer arguments than parameters defined. What happens to missing parameters?",
+"options":["Error occurs","They become undefined","They take default values automatically","They are ignored"],
 "correctAnswer":1
 },
 {
-"text":"A developer logs typeof username where username stores the value Ali. What result should appear in the console?",
-"options":["text","string","object","char"],
-"correctAnswer":1
-},
-{
-"text":"A variable called price stores the value 12.3456 and must be displayed with exactly two decimal places for billing purposes. What will be the resulting formatted value using toFixed(2)?",
-"options":["12.34","12.35","12.3","12.346"],
-"correctAnswer":1
-},
-{
-"text":"A developer formats the number 123.456 using toPrecision(4). What is the most accurate representation based on four significant digits?",
-"options":["123.456","123.5","123.45","123.0"],
-"correctAnswer":1
-},
-{
-"text":"A developer converts the string 123 into a number using Number('123'). What type will typeof return for the resulting value?",
-"options":["string","number","object","boolean"],
-"correctAnswer":1
-},
-{
-"text":"A developer converts a number variable into a string using the toString method. What is the primary purpose of this operation?",
-"options":["Increase precision","Change data type","Format arrays","Remove decimals"],
-"correctAnswer":1
-},
-{
-"text":"An application attempts to perform calculations using values obtained from user input fields which always arrive as text. Why must explicit type conversion be performed before mathematical operations?",
-"options":["Strings cannot be displayed","Text input may cause incorrect arithmetic","JavaScript forbids string variables","Arrays require numbers"],
-"correctAnswer":1
-},
-{
-"text":"A developer writes code that dynamically evaluates mathematical expressions stored as strings using eval. What is the main reason modern development practices discourage this approach?",
-"options":["It increases file size","It can execute untrusted code","It disables arrays","It prevents debugging"],
-"correctAnswer":1
-},
-{
-"text":"A developer defines an empty array that will later store product names retrieved from an API. Which syntax correctly creates this empty array?",
-"options":["let products = []","let products = {}","let products = ()","let products = <>"],
-"correctAnswer":0
-},
-{
-"text":"A developer checks the total number of elements stored in an array named items. Which property should be used?",
-"options":["items.count","items.size","items.length","items.total"],
-"correctAnswer":2
-},
-{
-"text":"A developer copies part of an array into a new variable but accidentally modifies the original data because the wrong method was used. Which method should have been chosen to avoid modifying the original array?",
-"options":["splice","slice","shift","pop"],
-"correctAnswer":1
-},
-{
-"text":"A team designs a playlist feature where songs can be appended to the end of the list and removed from the end when the user presses undo. Which two methods are most appropriate for this behavior?",
-"options":["push and pop","shift and unshift","slice and splice","sort and reverse"],
-"correctAnswer":0
-},
-{
-"text":"A developer wants to check whether the array fruits already contains the value Mango before adding it again. Which method returns a boolean indicating presence of the value?",
-"options":["search","includes","indexOf","slice"],
-"correctAnswer":1
-},
-{
-"text":"A developer receives numeric values from an external API but the values arrive as strings. The application must perform mathematical calculations such as addition and multiplication with these values. Which approach ensures the values behave as numbers rather than text during calculations?",
-"options":["Use typeof before calculations","Convert the values using Number() or parseFloat()","Store them inside arrays","Use toLocaleString()"],
-"correctAnswer":1
-},
-{
-"text":"A financial reporting tool must display large monetary values with commas separating thousands for readability. The developer wants the formatting to follow regional conventions such as currency symbols and decimal separators. Which JavaScript method should be used?",
-"options":["toPrecision()","toLocaleString()","toFixed()","parseFloat()"],
-"correctAnswer":1
-},
-{
-"text":"A developer declares an array containing product names and later accidentally overwrites one element by assigning a new value to fruits[2]. What does this behavior demonstrate about JavaScript arrays?",
-"options":["Array elements are immutable","Array elements can be modified using index assignment","Arrays cannot store strings","Array indexes start from 1"],
-"correctAnswer":1
-},
-{
-"text":"An application stores product categories inside an array and needs to determine whether the category Electronics already exists before adding it again. Which method directly returns a boolean value indicating whether the item is present?",
-"options":["indexOf()","includes()","splice()","slice()"],
-"correctAnswer":1
-},
-{
-"text":"A developer writes code that removes an item from an array and also returns a new array containing only a selected range of elements. Which method performs copying of part of an array without modifying the original data structure?",
-"options":["splice()","slice()","shift()","pop()"],
-"correctAnswer":1
-},
-{
-"text":"A developer stores temperature values inside an array and wants to display them in reverse order without manually swapping elements. Which method can reverse the order of all elements within the array?",
-"options":["sort()","reverse()","splice()","indexOf()"],
+"text":"A developer builds a reusable utility library with multiple helper functions. What is the main benefit of this approach?",
+"options":["Less execution time","Code reusability","Automatic debugging","Better UI"],
 "correctAnswer":1
 }
+
 ]
 }
 ]
