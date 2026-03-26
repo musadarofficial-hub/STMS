@@ -228,7 +228,240 @@
 "text":"What is output?\n\nlet x = NaN;\nif(x){ console.log(\"True\"); } else { console.log(\"False\"); }",
 "options":["True","False","Error","Undefined"],
 "correctAnswer":1
+},
+{
+"text":"A developer evaluates (\"0\" == 0). What is the result?",
+"options":["true","false","error","undefined"],
+"correctAnswer":0
+},
+{
+"text":"What will be printed?\n\nconsole.log(\"\" === false);",
+"options":["true","false","undefined","error"],
+"correctAnswer":1
+},
+{
+"text":"What is the output?\n\nconsole.log(!0);",
+"options":["true","false","0","error"],
+"correctAnswer":0
+},
+{
+"text":"A condition checks if ([]). What will be the result?",
+"options":["false","true","error","undefined"],
+"correctAnswer":1
+},
+{
+"text":"What will be printed?\n\nconsole.log(null === undefined);",
+"options":["true","false","error","undefined"],
+"correctAnswer":1
+},
+{
+"text":"A developer uses a ternary operator for marks = 85. What will be result?\n\nmarks >= 80 ? \"A\" : \"B\"",
+"options":["A","B","C","Error"],
+"correctAnswer":0
+},
+{
+"text":"What will be printed?\n\nlet i=0;\nwhile(i<3){ console.log(i); i++; }",
+"options":["0 1 2","1 2 3","0 1","Error"],
+"correctAnswer":0
+},
+{
+"text":"What is output?\n\nlet i=0;\ndo{ console.log(i); i++; }while(i<0);",
+"options":["0","Nothing","Error","Undefined"],
+"correctAnswer":0
+},
+{
+"text":"How many iterations will run?\n\nfor(let i=1;i<=4;i++)",
+"options":["3","4","5","Infinite"],
+"correctAnswer":1
+},
+{
+"text":"What will be printed?\n\nfor(let i=1;i<5;i++){ if(i%2===0) console.log(i); }",
+"options":["1 2 3 4","2 4","1 3","None"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer uses a loop to sum numbers 1 to 3. What is result?",
+"options":["5","6","7","Error"],
+"correctAnswer":1
+},
+{
+"text":"What is printed?\n\nlet arr=[2,4,6];\nlet sum=0;\nfor(let i=0;i<arr.length;i++){ sum+=arr[i]; }\nconsole.log(sum);",
+"options":["10","12","14","Error"],
+"correctAnswer":1
+},
+{
+"text":"What will be printed?\n\nlet arr=[1,2];\nfor(let i=0;i<3;i++){ console.log(arr[i]); }",
+"options":["1 2 undefined","1 2 3","Error","Nothing"],
+"correctAnswer":0
+},
+{
+"text":"What is output?\n\nlet x = \"hello\";\nif(x){ console.log(\"Yes\"); }",
+"options":["Yes","No","Error","Undefined"],
+"correctAnswer":0
+},
+{
+"text":"What will be printed?\n\nlet x = false;\nconsole.log(!x);",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet score=60;\nif(score>=60) console.log(\"Pass\");",
+"options":["Pass","Fail","Error","Undefined"],
+"correctAnswer":0
+},
+{
+"text":"What will be printed?\n\nlet score=59;\nif(score>=60) console.log(\"Pass\"); else console.log(\"Fail\");",
+"options":["Pass","Fail","Error","Undefined"],
+"correctAnswer":1
+},
+{
+"text":"What is printed?\n\nlet score=85;\nif(score>=90) console.log(\"A+\"); else if(score>=80) console.log(\"A\");",
+"options":["A+","A","B","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet day=5;\nswitch(day){ case 5: console.log(\"Friday\"); break; default: console.log(\"Other\"); }",
+"options":["Friday","Other","Error","Undefined"],
+"correctAnswer":0
+},
+{
+"text":"What happens if no case matches in switch and no default is provided?",
+"options":["Error","Nothing happens","Program stops","Undefined printed"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet i=3;\nwhile(i>0){ console.log(i); i--; }",
+"options":["3 2 1","1 2 3","3 2","Error"],
+"correctAnswer":0
+},
+{
+"text":"What is output?\n\nlet i=3;\ndo{ console.log(i); i--; }while(i>3);",
+"options":["3","Nothing","Error","Undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet arr=[10,20,30];\nconsole.log(arr[1]);",
+"options":["10","20","30","Error"],
+"correctAnswer":1
+},
+{
+"text":"What is output?\n\nlet arr=[10];\nconsole.log(arr[2]);",
+"options":["10","undefined","error","null"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nfunction check(n){ return n%2===0; }\nconsole.log(check(4));",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+{
+"text":"What is output?\n\nfunction test(){ }\nconsole.log(test());",
+"options":["undefined","null","error","0"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet obj={age:15};\nif(obj.age>=18){ console.log(\"Adult\"); } else { console.log(\"Minor\"); }",
+"options":["Adult","Minor","Error","Undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nconsole.log(1 && 0);",
+"options":["true","false","0","1"],
+"correctAnswer":2
+},
+{
+"text":"What will be printed?\n\nconsole.log(0 || \"Hello\");",
+"options":["0","Hello","false","undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet x=5;\nif(x>2 && x<10){ console.log(\"Valid\"); }",
+"options":["Valid","Invalid","Error","Undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet i=0;\nfor(;i<2;){ console.log(i); i++; }",
+"options":["0 1","1 2","0","Error"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet arr=[1,2,3];\nlet i=0;\nwhile(i<arr.length){ console.log(arr[i]); i++; }",
+"options":["1 2 3","0 1 2","Error","Undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet x=\"\";\nconsole.log(x || \"Default\");",
+"options":["\"\"","Default","undefined","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet x=10;\nconsole.log(x>5 ? x : 0);",
+"options":["10","5","0","Error"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet x=3;\nswitch(x){ case 1: console.log(\"One\"); case 3: console.log(\"Three\"); }",
+"options":["One","Three","One Three","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet arr=[5,10,15];\nfor(let i=0;i<arr.length;i++){ if(arr[i]>10) console.log(arr[i]); }",
+"options":["5","10","15","5 10 15"],
+"correctAnswer":2
+},
+
+{
+"text":"What will be printed?\n\nlet obj={marks:70};\nconsole.log(obj.marks>=60 ? \"Pass\" : \"Fail\");",
+"options":["Pass","Fail","Error","Undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet x=null;\nconsole.log(x==undefined);",
+"options":["true","false","error","undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nconsole.log(typeof NaN);",
+"options":["number","NaN","undefined","object"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet i=1;\nfor(;i<=3;i++){}\nconsole.log(i);",
+"options":["3","4","1","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet arr=[1,2];\nfor(let i=0;i<arr.length;i++){ arr[i]*=2; }\nconsole.log(arr[1]);",
+"options":["2","4","6","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet x=NaN;\nconsole.log(x==NaN);",
+"options":["true","false","error","undefined"],
+"correctAnswer":1
 }
+
+
 
 ]
 }
