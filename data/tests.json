@@ -1,320 +1,233 @@
 [
 {
-"id":"JS-CH2-ADV",
-"title":"JavaScript Certification Test (2.3 to 2.5)",
+"id":"JS-CH3-ADV",
+"title":"JavaScript Certification Test (Decision & Loops)",
 "instructions":"You have only one attempt. Read each scenario carefully before selecting the best answer.",
-"timeLimit":45,
+"timeLimit":60,
 "passingPercentage":75,
 "questions":[
 
 {
-"text":"A developer is designing an application to manage car data where each car must store properties such as brand, model, and year, along with a function to start the engine. Which JavaScript structure is most suitable to represent this real-world entity efficiently?",
-"options":["Array","Object","String","Number"],
+"text":"A developer compares two values using 5 == \"5\" inside a condition. What will be the result of this comparison?",
+"options":["false because types differ","true due to type conversion","undefined","error"],
 "correctAnswer":1
 },
 {
-"text":"A developer accesses object properties using both car.brand and car['brand'] in different parts of the code. What is the primary reason for using bracket notation instead of dot notation in some scenarios?",
-"options":["It executes faster","It allows dynamic property names","It prevents errors","It converts values to string"],
+"text":"A developer uses strict equality (===) to compare 5 and \"5\". What will be returned?",
+"options":["true","false","NaN","undefined"],
 "correctAnswer":1
 },
 {
-"text":"An application dynamically adds a property email to a user object using a variable key. Which approach correctly achieves this behavior?",
-"options":["user.email = value","user.key = value","user[key] = value","user.add(key,value)"],
+"text":"In a validation system, a condition checks if (age >= 18 && hasID). When will this condition evaluate to true?",
+"options":["Only when age >= 18","Only when hasID is true","When both conditions are true","When either condition is true"],
 "correctAnswer":2
 },
 {
-"text":"A developer wants to verify whether a specific property exists in an object before accessing it. Which operator provides a direct boolean result for this check?",
-"options":["typeof","in","instanceof","has"],
-"correctAnswer":1
-},
-{
-"text":"A developer removes a property color from an object to clean up unused data. Which keyword is used to perform this operation?",
-"options":["remove","delete","clear","pop"],
-"correctAnswer":1
-},
-{
-"text":"A method inside an object tries to access another property using this.name. What does the this keyword refer to in this context?",
-"options":["Global object","Current object","Parent function","Window object"],
-"correctAnswer":1
-},
-{
-"text":"A developer creates an object using new Object() and later assigns properties individually. What is this approach called?",
-"options":["Object literal","Object instantiation","Object cloning","Object inheritance"],
-"correctAnswer":1
-},
-{
-"text":"A program stores a function inside an object property and calls it using object.method(). What is this function called?",
-"options":["Callback","Constructor","Method","Prototype"],
+"text":"A developer uses the OR operator in the condition (isAdmin || isEditor). When will the result be true?",
+"options":["Only when both are true","Only when both are false","When at least one is true","Never"],
 "correctAnswer":2
 },
 {
-"text":"A developer defines a method fullName that returns firstName plus lastName. What is the main advantage of using a method instead of storing full name directly?",
-"options":["Faster execution","Dynamic calculation","Less memory","Better syntax"],
+"text":"What will be the result of !true in a logical expression?",
+"options":["true","false","undefined","null"],
 "correctAnswer":1
 },
 {
-"text":"A system logs current date and time using new Date(). What does this constructor return when called without arguments?",
-"options":["Null","String","Current date and time","Only date"],
-"correctAnswer":2
-},
-
-{
-"text":"A developer uses getMonth() and expects January to return 1, but receives 0 instead. What is the reason for this behavior?",
-"options":["Bug in JavaScript","Months are zero-indexed","Timezone issue","Incorrect syntax"],
-"correctAnswer":1
-},
-{
-"text":"A system calculates a future date by adding 7 days to today using setDate(). What concept is being applied?",
-"options":["Date formatting","Date arithmetic","Date parsing","Date conversion"],
-"correctAnswer":1
-},
-{
-"text":"A developer subtracts two Date objects and gets a large numeric value. What does this value represent?",
-"options":["Seconds","Milliseconds difference","Minutes","Hours"],
-"correctAnswer":1
-},
-{
-"text":"An application displays date in user-friendly format using toLocaleDateString(). What is the main benefit of this method?",
-"options":["Faster processing","Localization support","Mathematical operations","Sorting"],
-"correctAnswer":1
-},
-{
-"text":"A countdown timer divides milliseconds by 1000*60*60*24. What is this calculation primarily used for?",
-"options":["Convert to hours","Convert to days","Convert to seconds","Convert to years"],
-"correctAnswer":1
-},
-
-{
-"text":"A developer uses Math.round(4.6) while processing user ratings. What will be the output?",
-"options":["4","5","4.6","Error"],
-"correctAnswer":1
-},
-{
-"text":"A billing system ensures all negative values become positive before calculations. Which method is most suitable?",
-"options":["Math.round","Math.abs","Math.ceil","Math.floor"],
-"correctAnswer":1
-},
-{
-"text":"A developer wants to remove decimal part without rounding while processing numeric input. Which method is correct?",
-"options":["Math.floor","Math.ceil","Math.trunc","Math.round"],
+"text":"Which of the following values is considered falsy in JavaScript?",
+"options":["\"hello\"","1","0","[]"],
 "correctAnswer":2
 },
 {
-"text":"A developer generates random numbers between 1 and 10 using Math.random(). What additional operation is required?",
-"options":["Math.ceil","Math.floor and scaling","Math.abs","Math.sqrt"],
+"text":"A condition checks if (\"Hello\"). What will happen?",
+"options":["It will throw an error","It evaluates to false","It evaluates to true","It returns null"],
+"correctAnswer":2
+},
+{
+"text":"A developer writes if (0). What will be the outcome?",
+"options":["true","false","undefined","error"],
 "correctAnswer":1
 },
 {
-"text":"A developer needs the largest number from a set of values. Which method directly provides this?",
-"options":["Math.max","Math.min","Math.pow","Math.random"],
+"text":"What will be printed?\n\nif (null) {\n console.log(\"Yes\");\n} else {\n console.log(\"No\");\n}",
+"options":["Yes","No","undefined","error"],
+"correctAnswer":1
+},
+{
+"text":"What is the output?\n\nconsole.log(undefined == null);",
+"options":["true","false","error","NaN"],
 "correctAnswer":0
 },
 
 {
-"text":"A function add(a,b) returns a + b. What is the purpose of the return keyword in this context?",
-"options":["Print output","Send value back","Stop execution","Declare variable"],
+"text":"A developer structures multiple conditions using if, else if, and else. Which block executes when all conditions are false?",
+"options":["if","else if","else","none"],
+"correctAnswer":2
+},
+{
+"text":"What will be printed?\n\nlet age = 10;\nif (age < 13) {\n console.log(\"Child\");\n} else if (age < 20) {\n console.log(\"Teen\");\n} else {\n console.log(\"Adult\");\n}",
+"options":["Teen","Adult","Child","Error"],
+"correctAnswer":2
+},
+{
+"text":"What will be the output?\n\nlet score = 95;\nif (score >= 60) {\n if (score >= 90) {\n  console.log(\"Excellent\");\n }\n}",
+"options":["Passed","Excellent","Failed","Nothing"],
 "correctAnswer":1
 },
 {
-"text":"A developer calls a function before defining it and it works successfully. What concept allows this behavior?",
-"options":["Closure","Hoisting","Scope","Callback"],
+"text":"What will happen if no break statement is used in a switch case?",
+"options":["Code stops","Error occurs","Fall-through happens","Nothing happens"],
+"correctAnswer":2
+},
+{
+"text":"What will be printed?\n\nlet day = 2;\nswitch(day) {\n case 1: console.log(\"Mon\"); break;\n case 2: console.log(\"Tue\"); break;\n default: console.log(\"Invalid\");\n}",
+"options":["Mon","Tue","Invalid","Error"],
 "correctAnswer":1
 },
 {
-"text":"A function expression is assigned to a variable and called later. Why might this approach be preferred?",
-"options":["Faster execution","Reusable reference","Automatic execution","Better syntax"],
+"text":"Which statement is equivalent to a simple if...else condition?",
+"options":["switch","ternary operator","for loop","while loop"],
 "correctAnswer":1
 },
 {
-"text":"An arrow function is written in one line without curly braces. What happens automatically?",
-"options":["Loop executes","Value is returned","Error occurs","Function stops"],
-"correctAnswer":1
-},
-{
-"text":"A variable declared inside a function cannot be accessed outside. What concept does this demonstrate?",
-"options":["Global scope","Local scope","Closure","Prototype"],
-"correctAnswer":1
-},
-
-{
-"text":"A primitive value passed into a function remains unchanged after function execution. What concept explains this behavior?",
-"options":["Pass by reference","Pass by value","Global scope","Hoisting"],
-"correctAnswer":1
-},
-{
-"text":"An object passed into a function gets modified internally. What does this demonstrate?",
-"options":["Pass by value","Pass by reference","Copying","Cloning"],
-"correctAnswer":1
-},
-
-{
-"text":"A developer creates a function without a name and passes it into setTimeout. What type of function is this?",
-"options":["Arrow function","Anonymous function","Callback function","Constructor"],
-"correctAnswer":1
-},
-{
-"text":"A function is passed as an argument to another function and executed later. What is this pattern called?",
-"options":["Recursion","Callback","Hoisting","Scope"],
-"correctAnswer":1
-},
-
-{
-"text":"A developer extracts part of a string using substr(2,4). What does this return?",
-"options":["4 characters starting index 2","Index 2 to 4","Error","Whole string"],
+"text":"What will be the output?\n\nlet age = 18;\nlet result = (age >= 18) ? \"Adult\" : \"Minor\";\nconsole.log(result);",
+"options":["Adult","Minor","undefined","error"],
 "correctAnswer":0
 },
 {
-"text":"A developer mistakenly assumes substr(2,4) ends at index 4. What is the correct behavior?",
-"options":["Ends at index 4","Returns 4 characters","Returns 2 characters","Throws error"],
+"text":"What will be printed?\n\nlet marks = 75;\nlet grade;\nif (marks >= 80) grade = \"A\";\nelse if (marks >= 70) grade = \"B\";\nelse grade = \"C\";\nconsole.log(grade);",
+"options":["A","B","C","D"],
 "correctAnswer":1
 },
 
 {
-"text":"A developer defines a method inside an object that increments age using this.age++. What is the effect of calling this method?",
-"options":["Creates new object","Updates property","Deletes property","Returns undefined"],
-"correctAnswer":1
-},
-
-{
-"text":"A developer formats currency using num.toFixed(2). What does this method ensure?",
-"options":["Integer conversion","2 decimal places","Random values","String removal"],
-"correctAnswer":1
-},
-{
-"text":"A developer creates a user object and later wants to access a property whose name is stored inside a variable fieldName. Which approach ensures correct access to that property?",
-"options":["user.fieldName","user['fieldName']","user[fieldName]","user.get(fieldName)"],
-"correctAnswer":2
-},
-{
-"text":"An application stores multiple related values such as name, age, and city together. The developer chooses an object instead of separate variables. What is the primary advantage of this design choice?",
-"options":["Faster execution","Grouped related data","Reduced memory usage","Automatic validation"],
-"correctAnswer":1
-},
-{
-"text":"A developer tries to access a property that does not exist in an object. What will JavaScript return in this scenario?",
-"options":["null","0","undefined","false"],
-"correctAnswer":2
-},
-{
-"text":"A developer wants to loop through object properties but has not yet learned loops. Instead, they manually access properties using dot notation. What is the main limitation of this approach?",
-"options":["Slower execution","Hardcoded access","Security issue","Memory leak"],
-"correctAnswer":1
-},
-{
-"text":"A developer uses new Date(2000, 0, 1) expecting February but gets January. What is the reason for this unexpected result?",
-"options":["Incorrect syntax","Month indexing starts at 0","Timezone issue","Leap year issue"],
-"correctAnswer":1
-},
-{
-"text":"A system displays time using toLocaleTimeString() every second. What type of data does this method return?",
-"options":["Number","String formatted time","Boolean","Object"],
-"correctAnswer":1
-},
-{
-"text":"A developer calculates remaining time for an event by subtracting two Date objects. Which data type is returned from this subtraction?",
-"options":["String","Boolean","Number","Object"],
-"correctAnswer":2
-},
-{
-"text":"A developer wants to ensure a number always rounds up regardless of decimal value. Which method should be used?",
-"options":["Math.round","Math.floor","Math.ceil","Math.trunc"],
-"correctAnswer":2
-},
-{
-"text":"A developer wants to always round down a decimal number during price calculations. Which method is most suitable?",
-"options":["Math.ceil","Math.floor","Math.round","Math.abs"],
-"correctAnswer":1
-},
-{
-"text":"A developer needs to determine whether a number is positive, negative, or zero. Which method directly provides this information?",
-"options":["Math.abs","Math.sign","Math.round","Math.sqrt"],
-"correctAnswer":1
-},
-{
-"text":"A developer uses Math.pow(2,3) in a calculation. What does this expression represent?",
-"options":["2 multiplied by 3","2 raised to power 3","Square root of 2","Random number"],
-"correctAnswer":1
-},
-{
-"text":"A developer needs to calculate the square root of a number entered by a user. Which method should be used?",
-"options":["Math.pow","Math.sqrt","Math.round","Math.abs"],
-"correctAnswer":1
-},
-{
-"text":"A developer generates a random number using Math.random() and multiplies it by 10. Why is Math.floor() often applied afterward?",
-"options":["To convert to string","To remove decimals","To increase range","To avoid errors"],
-"correctAnswer":1
-},
-{
-"text":"A function greet(name = 'Guest') is defined. What happens if the function is called without passing any argument?",
-"options":["Error occurs","Undefined is used","Default value is used","Function stops"],
-"correctAnswer":2
-},
-{
-"text":"A developer defines a function but forgets to call it. What will happen?",
-"options":["Function executes automatically","Nothing happens","Error occurs","Value returned"],
-"correctAnswer":1
-},
-{
-"text":"A developer assigns a function to a variable and calls it later. What type of function is this?",
-"options":["Named function","Function expression","Constructor","Callback"],
-"correctAnswer":1
-},
-{
-"text":"A developer uses an arrow function for a short calculation. What is a key difference compared to traditional functions?",
-"options":["No return","Short syntax","No parameters","Cannot execute"],
-"correctAnswer":1
-},
-{
-"text":"A developer accesses a global variable inside a function successfully. Why is this allowed?",
-"options":["Local scope","Global scope accessibility","Hoisting","Closure"],
-"correctAnswer":1
-},
-{
-"text":"A developer defines a variable inside a function and tries to access it outside, resulting in an error. What is the cause?",
-"options":["Syntax error","Scope limitation","Type mismatch","Memory issue"],
-"correctAnswer":1
-},
-{
-"text":"A developer modifies an object inside a function and sees the change reflected outside. Why does this occur?",
-"options":["Pass by value","Pass by reference","Global scope","Hoisting"],
-"correctAnswer":1
-},
-{
-"text":"A developer passes a number into a function and modifies it inside, but original value remains unchanged. Why?",
-"options":["Pass by reference","Pass by value","Scope issue","Callback issue"],
-"correctAnswer":1
-},
-{
-"text":"A developer creates a utility function to format currency using toFixed(2). What type of value does this method return?",
-"options":["Number","String","Boolean","Object"],
-"correctAnswer":1
-},
-{
-"text":"A developer wants to ensure a number displays exactly two decimal places even if unnecessary zeros are added. Which method is appropriate?",
-"options":["Math.round","toFixed","Math.floor","parseInt"],
-"correctAnswer":1
-},
-{
-"text":"A developer uses split(), reverse(), and join() together on a string. What is the main purpose of this combination?",
-"options":["Sorting string","Reversing string","Splitting string","Concatenation"],
-"correctAnswer":1
-},
-{
-"text":"A developer creates a function that returns multiple values such as area and perimeter inside an object. What is this pattern called?",
-"options":["Array return","Object return","Callback return","Loop return"],
-"correctAnswer":1
-},
-{
-"text":"A developer writes a function that accepts parameters but forgets to return a value. What will be returned by default?",
-"options":["null","0","undefined","false"],
-"correctAnswer":2
-},
-
-{
-"text":"Evaluate the code contestants='Robin, Shawn, Patsy'; console.log(contestants.substr(7,6); What will be the output?)",
-"options":["Shawn,","S","hawn, P","Shawn"],
+"text":"What is the output?\n\nfor (let i = 1; i <= 3; i++) {\n console.log(i);\n}",
+"options":["1 2 3","0 1 2","1 2","Error"],
 "correctAnswer":0
+},
+{
+"text":"How many times will this loop execute?\n\nfor (let i = 0; i < 5; i++)",
+"options":["4","5","6","Infinite"],
+"correctAnswer":1
+},
+{
+"text":"What is printed?\n\nlet i = 1;\nwhile (i <= 3) {\n console.log(i);\n i++;\n}",
+"options":["1 2 3","0 1 2","1 2","Error"],
+"correctAnswer":0
+},
+{
+"text":"What is the output?\n\nlet i = 5;\nwhile (i < 3) {\n console.log(i);\n}",
+"options":["5","Nothing","Error","Undefined"],
+"correctAnswer":1
+},
+{
+"text":"What is printed?\n\nlet i = 5;\ndo {\n console.log(i);\n} while (i < 3);",
+"options":["Nothing","5","Error","Undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"A developer uses a for loop to iterate through an array [2,4,6]. What is the correct way to access each element?",
+"options":["array(i)","array[i]","array{i}","array.i"],
+"correctAnswer":1
+},
+{
+"text":"What will be the output?\n\nlet arr = [1,2,3];\nlet sum = 0;\nfor (let i=0;i<arr.length;i++){\n sum += arr[i];\n}\nconsole.log(sum);",
+"options":["5","6","7","Error"],
+"correctAnswer":1
+},
+{
+"text":"What will be printed?\n\nlet arr = [10,20];\nfor (let i=0;i<arr.length;i++){\n console.log(arr[i]);\n}",
+"options":["10 20","0 1","undefined","Error"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be the output?\n\nfunction check(num){\n return num > 5;\n}\nconsole.log(check(10));",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+{
+"text":"What is printed?\n\nfunction test(x){\n if(x){ return \"Yes\" }\n else{ return \"No\" }\n}\nconsole.log(test(0));",
+"options":["Yes","No","Error","Undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"A loop runs from 1 to 5 and prints only numbers greater than 3. Which condition is correct?",
+"options":["i < 3","i > 3","i == 3","i <= 3"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet x = \"\";\nif(x){ console.log(\"True\"); }\nelse{ console.log(\"False\"); }",
+"options":["True","False","Error","Undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nconsole.log(5 !== \"5\");",
+"options":["true","false","error","undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nconsole.log(3 > 2 && 2 > 1);",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be the output?\n\nconsole.log(false || true);",
+"options":["false","true","undefined","error"],
+"correctAnswer":1
+},
+
+{
+"text":"What is printed?\n\nlet marks = 50;\nconsole.log(marks >= 60 ? \"Pass\" : \"Fail\");",
+"options":["Pass","Fail","Error","Undefined"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet i=1;\nwhile(i<=3){\n console.log(i);\n i++;\n}",
+"options":["1 2 3","1 2","0 1 2","Error"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nfor(let i=2;i<=6;i+=2){ console.log(i); }",
+"options":["2 4 6","2 3 4","1 2 3","Error"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet arr=[5,10];\nfor(let i=0;i<arr.length;i++){\n if(arr[i]>5) console.log(arr[i]);\n}",
+"options":["5","10","5 10","None"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet user = {name:\"Ali\", age:20};\nif(user.age >=18){ console.log(\"Adult\"); }",
+"options":["Adult","Child","Error","Undefined"],
+"correctAnswer":0
+},
+
+{
+"text":"What is the output?\n\nfunction sum(a,b){ return a+b; }\nconsole.log(sum(2,3));",
+"options":["5","23","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet arr=[1,2,3];\nconsole.log(arr.length);",
+"options":["2","3","4","Error"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet x = NaN;\nif(x){ console.log(\"True\"); } else { console.log(\"False\"); }",
+"options":["True","False","Error","Undefined"],
+"correctAnswer":1
 }
 
 ]
