@@ -130,22 +130,7 @@
 "options":["array(i)","array[i]","array{i}","array.i"],
 "correctAnswer":1
 },
-{
-"text":"What will be the output?\n\nlet arr = [1,2,3];\nlet sum = 0;\nfor (let i=0;i<arr.length;i++){\n sum += arr[i];\n}\nconsole.log(sum);",
-"options":["5","6","7","Error"],
-"correctAnswer":1
-},
-{
-"text":"What will be printed?\n\nlet arr = [10,20];\nfor (let i=0;i<arr.length;i++){\n console.log(arr[i]);\n}",
-"options":["10 20","0 1","undefined","Error"],
-"correctAnswer":0
-},
 
-{
-"text":"What will be the output?\n\nfunction check(num){\n return num > 5;\n}\nconsole.log(check(10));",
-"options":["true","false","undefined","error"],
-"correctAnswer":0
-},
 {
 "text":"What is printed?\n\nfunction test(x){\n if(x){ return \"Yes\" }\n else{ return \"No\" }\n}\nconsole.log(test(0));",
 "options":["Yes","No","Error","Undefined"],
@@ -279,17 +264,6 @@
 "options":["1 2 3 4","2 4","1 3","None"],
 "correctAnswer":1
 },
-
-{
-"text":"A developer uses a loop to sum numbers 1 to 3. What is result?",
-"options":["5","6","7","Error"],
-"correctAnswer":1
-},
-{
-"text":"What is printed?\n\nlet arr=[2,4,6];\nlet sum=0;\nfor(let i=0;i<arr.length;i++){ sum+=arr[i]; }\nconsole.log(sum);",
-"options":["10","12","14","Error"],
-"correctAnswer":1
-},
 {
 "text":"What will be printed?\n\nlet arr=[1,2];\nfor(let i=0;i<3;i++){ console.log(arr[i]); }",
 "options":["1 2 undefined","1 2 3","Error","Nothing"],
@@ -338,11 +312,7 @@
 "options":["3 2 1","1 2 3","3 2","Error"],
 "correctAnswer":0
 },
-{
-"text":"What is output?\n\nlet i=3;\ndo{ console.log(i); i--; }while(i>3);",
-"options":["3","Nothing","Error","Undefined"],
-"correctAnswer":0
-},
+
 
 {
 "text":"What will be printed?\n\nlet arr=[10,20,30];\nconsole.log(arr[1]);",
@@ -364,12 +334,6 @@
 "text":"What is output?\n\nfunction test(){ }\nconsole.log(test());",
 "options":["undefined","null","error","0"],
 "correctAnswer":0
-},
-
-{
-"text":"What will be printed?\n\nlet obj={age:15};\nif(obj.age>=18){ console.log(\"Adult\"); } else { console.log(\"Minor\"); }",
-"options":["Adult","Minor","Error","Undefined"],
-"correctAnswer":1
 },
 
 {
@@ -448,13 +412,6 @@
 "options":["3","4","1","Error"],
 "correctAnswer":1
 },
-
-{
-"text":"What will be printed?\n\nlet arr=[1,2];\nfor(let i=0;i<arr.length;i++){ arr[i]*=2; }\nconsole.log(arr[1]);",
-"options":["2","4","6","Error"],
-"correctAnswer":1
-},
-
 {
 "text":"What is output?\n\nlet x=NaN;\nconsole.log(x==NaN);",
 "options":["true","false","error","undefined"],
