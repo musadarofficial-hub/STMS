@@ -283,7 +283,26 @@
 "text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.style.backgroundColor = \"blue\";\nconsole.log(el.style.backgroundColor);",
 "options":["blue","red","undefined","error"],
 "correctAnswer":0
+},
+{
+"text":"Which statement is false?",
+"options":["The innerHtml must be used within a document.write statement","document.write good for writing HTML to anew document"
+            ,"InnerHTML can looks text between opening an dclossing tag of an elements","None of these"],
+"correctAnswer":0
+},
+{
+"text":"Which statement is true?",
+"options":["getElementsByClassName method is the part of document object","open and close methods are the part of document object"
+            ,"Both a & b","None of these"],
+"correctAnswer":0
+},
+{
+"text":"Which statement is false?",
+"options":["innerHeight is a window property","body is a Document object"
+            ,"InnerHTML is Document property","None of these"],
+"correctAnswer":2
 }
+
 
 ]
 }
