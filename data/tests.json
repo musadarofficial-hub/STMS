@@ -1,424 +1,289 @@
 [
 {
-"id":"JS-CH3-ADV",
-"title":"JavaScript Certification Test (Decision & Loops)",
+"id":"JS-CH4-ADV",
+"title":"JavaScript Certification Test (DOM 4.1, 4.3, 4.4)",
 "instructions":"You have only one attempt. Read each scenario carefully before selecting the best answer.",
-"timeLimit":60,
+"timeLimit":40,
 "passingPercentage":75,
 "questions":[
 
 {
-"text":"A developer compares two values using 5 == \"5\" inside a condition. What will be the result of this comparison?",
-"options":["false because types differ","true due to type conversion","undefined","error"],
+"text":"A developer is explaining the structure of a web page in terms of objects where the browser window contains the document and the document contains all HTML elements. Which hierarchy correctly represents this relationship?",
+"options":["document → window → elements","window → document → elements","elements → document → window","window → elements → document"],
 "correctAnswer":1
 },
 {
-"text":"A developer uses strict equality (===) to compare 5 and \"5\". What will be returned?",
-"options":["true","false","NaN","undefined"],
+"text":"A developer wants to inspect the entire DOM tree structure of a loaded webpage in detail using the browser console. Which method is most appropriate for exploring nested object properties visually?",
+"options":["console.log(document)","console.dir(document)","document.write(document)","alert(document)"],
 "correctAnswer":1
 },
 {
-"text":"In a validation system, a condition checks if (age >= 18 && hasID). When will this condition evaluate to true?",
-"options":["Only when age >= 18","Only when hasID is true","When both conditions are true","When either condition is true"],
-"correctAnswer":2
-},
-{
-"text":"A developer uses the OR operator in the condition (isAdmin || isEditor). When will the result be true?",
-"options":["Only when both are true","Only when both are false","When at least one is true","Never"],
-"correctAnswer":2
-},
-{
-"text":"What will be the result of !true in a logical expression?",
-"options":["true","false","undefined","null"],
+"text":"In a DOM tree, a developer wants to access only element nodes and ignore text nodes such as whitespace. Which property is most suitable for this purpose?",
+"options":["childNodes","children","firstChild","nodeValue"],
 "correctAnswer":1
 },
 {
-"text":"Which of the following values is considered falsy in JavaScript?",
-"options":["\"hello\"","1","0","[]"],
-"correctAnswer":2
-},
-{
-"text":"A condition checks if (\"Hello\"). What will happen?",
-"options":["It will throw an error","It evaluates to false","It evaluates to true","It returns null"],
-"correctAnswer":2
-},
-{
-"text":"A developer writes if (0). What will be the outcome?",
+"text":"What will be the output of the following code?\n\nconsole.log(document.body !== null);",
 "options":["true","false","undefined","error"],
-"correctAnswer":1
+"correctAnswer":0
 },
 {
-"text":"What will be printed?\n\nif (null) {\n console.log(\"Yes\");\n} else {\n console.log(\"No\");\n}",
-"options":["Yes","No","undefined","error"],
-"correctAnswer":1
-},
-{
-"text":"What is the output?\n\nconsole.log(undefined == null);",
-"options":["true","false","error","NaN"],
+"text":"A developer needs to navigate from a child element to its immediate parent element in the DOM tree. Which property should be used?",
+"options":["parentNode","childNodes","nextSibling","firstChild"],
 "correctAnswer":0
 },
 
 {
-"text":"A developer structures multiple conditions using if, else if, and else. Which block executes when all conditions are false?",
-"options":["if","else if","else","none"],
-"correctAnswer":2
-},
-{
-"text":"What will be printed?\n\nlet age = 10;\nif (age < 13) {\n console.log(\"Child\");\n} else if (age < 20) {\n console.log(\"Teen\");\n} else {\n console.log(\"Adult\");\n}",
-"options":["Teen","Adult","Child","Error"],
-"correctAnswer":2
-},
-{
-"text":"What will be the output?\n\nlet score = 95;\nif (score >= 60) {\n if (score >= 90) {\n  console.log(\"Excellent\");\n }\n}",
-"options":["Passed","Excellent","Failed","Nothing"],
-"correctAnswer":1
-},
-{
-"text":"What will happen if no break statement is used in a switch case?",
-"options":["Code stops","Error occurs","Fall-through happens","Nothing happens"],
-"correctAnswer":2
-},
-{
-"text":"What will be printed?\n\nlet day = 2;\nswitch(day) {\n case 1: console.log(\"Mon\"); break;\n case 2: console.log(\"Tue\"); break;\n default: console.log(\"Invalid\");\n}",
-"options":["Mon","Tue","Invalid","Error"],
-"correctAnswer":1
-},
-{
-"text":"Which statement is equivalent to a simple if...else condition?",
-"options":["switch","ternary operator","for loop","while loop"],
-"correctAnswer":1
-},
-{
-"text":"What will be the output?\n\nlet age = 18;\nlet result = (age >= 18) ? \"Adult\" : \"Minor\";\nconsole.log(result);",
-"options":["Adult","Minor","undefined","error"],
-"correctAnswer":0
-},
-{
-"text":"What will be printed?\n\nlet marks = 75;\nlet grade;\nif (marks >= 80) grade = \"A\";\nelse if (marks >= 70) grade = \"B\";\nelse grade = \"C\";\nconsole.log(grade);",
-"options":["A","B","C","D"],
-"correctAnswer":1
-},
-
-{
-"text":"What is the output?\n\nfor (let i = 1; i <= 3; i++) {\n console.log(i);\n}",
-"options":["1 2 3","0 1 2","1 2","Error"],
-"correctAnswer":0
-},
-{
-"text":"How many times will this loop execute?\n\nfor (let i = 0; i < 5; i++)",
-"options":["4","5","6","Infinite"],
-"correctAnswer":1
-},
-{
-"text":"What is printed?\n\nlet i = 1;\nwhile (i <= 3) {\n console.log(i);\n i++;\n}",
-"options":["1 2 3","0 1 2","1 2","Error"],
-"correctAnswer":0
-},
-{
-"text":"What is the output?\n\nlet i = 5;\nwhile (i < 3) {\n console.log(i);\n}",
-"options":["5","Nothing","Error","Undefined"],
-"correctAnswer":1
-},
-{
-"text":"What is printed?\n\nlet i = 5;\ndo {\n console.log(i);\n} while (i < 3);",
-"options":["Nothing","5","Error","Undefined"],
-"correctAnswer":1
-},
-
-{
-"text":"A developer uses a for loop to iterate through an array [2,4,6]. What is the correct way to access each element?",
-"options":["array(i)","array[i]","array{i}","array.i"],
-"correctAnswer":1
-},
-
-{
-"text":"What is printed?\n\nfunction test(x){\n if(x){ return \"Yes\" }\n else{ return \"No\" }\n}\nconsole.log(test(0));",
-"options":["Yes","No","Error","Undefined"],
-"correctAnswer":1
-},
-
-{
-"text":"A loop runs from 1 to 5 and prints only numbers greater than 3. Which condition is correct?",
-"options":["i < 3","i > 3","i == 3","i <= 3"],
-"correctAnswer":1
-},
-
-{
-"text":"What is output?\n\nlet x = \"\";\nif(x){ console.log(\"True\"); }\nelse{ console.log(\"False\"); }",
-"options":["True","False","Error","Undefined"],
-"correctAnswer":1
-},
-
-{
-"text":"What will be printed?\n\nconsole.log(5 !== \"5\");",
-"options":["true","false","error","undefined"],
+"text":"What will be printed?\n\nconsole.log(document.title);",
+"options":["Returns page title","Returns body content","Returns null","Throws error"],
 "correctAnswer":0
 },
 
 {
-"text":"What is output?\n\nconsole.log(3 > 2 && 2 > 1);",
+"text":"A developer uses div.childNodes.length and div.children.length. What is the key difference?",
+"options":["Both return same values","childNodes includes text nodes, children only elements","children includes text nodes","childNodes excludes elements"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be the output?\n\nlet el = document.body;\nconsole.log(el.parentNode === document.documentElement);",
 "options":["true","false","undefined","error"],
 "correctAnswer":0
 },
 
 {
-"text":"What will be the output?\n\nconsole.log(false || true);",
-"options":["false","true","undefined","error"],
+"text":"A developer wants to access the first element inside a container ignoring text nodes. Which property should be used?",
+"options":["firstChild","firstElementChild","childNodes[0]","nodeValue"],
 "correctAnswer":1
 },
 
 {
-"text":"What is printed?\n\nlet marks = 50;\nconsole.log(marks >= 60 ? \"Pass\" : \"Fail\");",
-"options":["Pass","Fail","Error","Undefined"],
+"text":"Which statement best describes the DOM?",
+"options":["A styling engine","A tree structure representation of HTML","A database system","A server-side API"],
 "correctAnswer":1
 },
 
 {
-"text":"What will be printed?\n\nlet i=1;\nwhile(i<=3){\n console.log(i);\n i++;\n}",
-"options":["1 2 3","1 2","0 1 2","Error"],
-"correctAnswer":0
-},
-
-{
-"text":"What is output?\n\nfor(let i=2;i<=6;i+=2){ console.log(i); }",
-"options":["2 4 6","2 3 4","1 2 3","Error"],
-"correctAnswer":0
-},
-
-{
-"text":"What will be printed?\n\nlet arr=[5,10];\nfor(let i=0;i<arr.length;i++){\n if(arr[i]>5) console.log(arr[i]);\n}",
-"options":["5","10","5 10","None"],
+"text":"A developer writes document.write(\"Hello\"); after page load. What is the likely outcome?",
+"options":["Content appended safely","Page content overwritten","Error occurs","Nothing happens"],
 "correctAnswer":1
 },
 
 {
-"text":"What will be printed?\n\nlet user = {name:\"Ali\", age:20};\nif(user.age >=18){ console.log(\"Adult\"); }",
-"options":["Adult","Child","Error","Undefined"],
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.textContent = \"Hello\";\nconsole.log(el.textContent);",
+"options":["Hello","<div>Hello</div>","undefined","error"],
 "correctAnswer":0
 },
 
 {
-"text":"What is the output?\n\nfunction sum(a,b){ return a+b; }\nconsole.log(sum(2,3));",
-"options":["5","23","undefined","error"],
+"text":"A developer inserts text using innerHTML = \"<b>Hello</b>\". What happens?",
+"options":["Text appears bold","HTML ignored","Error","Nothing"],
 "correctAnswer":0
 },
 
 {
-"text":"What will be printed?\n\nlet arr=[1,2,3];\nconsole.log(arr.length);",
-"options":["2","3","4","Error"],
+"text":"A developer wants to display user input safely without interpreting HTML. Which method should be used?",
+"options":["innerHTML","textContent","document.write","setAttribute"],
 "correctAnswer":1
 },
 
 {
-"text":"What is output?\n\nlet x = NaN;\nif(x){ console.log(\"True\"); } else { console.log(\"False\"); }",
-"options":["True","False","Error","Undefined"],
-"correctAnswer":1
-},
-{
-"text":"A developer evaluates (\"0\" == 0). What is the result?",
-"options":["true","false","error","undefined"],
-"correctAnswer":0
-},
-{
-"text":"What will be printed?\n\nconsole.log(\"\" === false);",
-"options":["true","false","undefined","error"],
-"correctAnswer":1
-},
-{
-"text":"What is the output?\n\nconsole.log(!0);",
-"options":["true","false","0","error"],
-"correctAnswer":0
-},
-{
-"text":"A condition checks if ([]). What will be the result?",
-"options":["false","true","error","undefined"],
-"correctAnswer":1
-},
-{
-"text":"What will be printed?\n\nconsole.log(null === undefined);",
-"options":["true","false","error","undefined"],
-"correctAnswer":1
-},
-{
-"text":"A developer uses a ternary operator for marks = 85. What will be result?\n\nmarks >= 80 ? \"A\" : \"B\"",
-"options":["A","B","C","Error"],
-"correctAnswer":0
-},
-{
-"text":"What will be printed?\n\nlet i=0;\nwhile(i<3){ console.log(i); i++; }",
-"options":["0 1 2","1 2 3","0 1","Error"],
-"correctAnswer":0
-},
-{
-"text":"What is output?\n\nlet i=0;\ndo{ console.log(i); i++; }while(i<0);",
-"options":["0","Nothing","Error","Undefined"],
-"correctAnswer":0
-},
-{
-"text":"How many iterations will run?\n\nfor(let i=1;i<=4;i++)",
-"options":["3","4","5","Infinite"],
-"correctAnswer":1
-},
-{
-"text":"What will be printed?\n\nfor(let i=1;i<5;i++){ if(i%2===0) console.log(i); }",
-"options":["1 2 3 4","2 4","1 3","None"],
-"correctAnswer":1
-},
-{
-"text":"What will be printed?\n\nlet arr=[1,2];\nfor(let i=0;i<3;i++){ console.log(arr[i]); }",
-"options":["1 2 undefined","1 2 3","Error","Nothing"],
-"correctAnswer":0
-},
-{
-"text":"What is output?\n\nlet x = \"hello\";\nif(x){ console.log(\"Yes\"); }",
-"options":["Yes","No","Error","Undefined"],
-"correctAnswer":0
-},
-{
-"text":"What will be printed?\n\nlet x = false;\nconsole.log(!x);",
-"options":["true","false","undefined","error"],
+"text":"What is output?\n\nlet el = document.createElement(\"p\");\nel.innerHTML = \"<b>Hi</b>\";\nconsole.log(el.textContent);",
+"options":["Hi","<b>Hi</b>","undefined","error"],
 "correctAnswer":0
 },
 
 {
-"text":"What is output?\n\nlet score=60;\nif(score>=60) console.log(\"Pass\");",
-"options":["Pass","Fail","Error","Undefined"],
-"correctAnswer":0
-},
-{
-"text":"What will be printed?\n\nlet score=59;\nif(score>=60) console.log(\"Pass\"); else console.log(\"Fail\");",
-"options":["Pass","Fail","Error","Undefined"],
-"correctAnswer":1
-},
-{
-"text":"What is printed?\n\nlet score=85;\nif(score>=90) console.log(\"A+\"); else if(score>=80) console.log(\"A\");",
-"options":["A+","A","B","Error"],
-"correctAnswer":1
-},
-
-{
-"text":"What will be printed?\n\nlet day=5;\nswitch(day){ case 5: console.log(\"Friday\"); break; default: console.log(\"Other\"); }",
-"options":["Friday","Other","Error","Undefined"],
-"correctAnswer":0
-},
-{
-"text":"What happens if no case matches in switch and no default is provided?",
-"options":["Error","Nothing happens","Program stops","Undefined printed"],
-"correctAnswer":1
-},
-
-{
-"text":"What will be printed?\n\nlet i=3;\nwhile(i>0){ console.log(i); i--; }",
-"options":["3 2 1","1 2 3","3 2","Error"],
-"correctAnswer":0
-},
-
-
-{
-"text":"What will be printed?\n\nlet arr=[10,20,30];\nconsole.log(arr[1]);",
-"options":["10","20","30","Error"],
-"correctAnswer":1
-},
-{
-"text":"What is output?\n\nlet arr=[10];\nconsole.log(arr[2]);",
-"options":["10","undefined","error","null"],
-"correctAnswer":1
-},
-
-{
-"text":"What will be printed?\n\nfunction check(n){ return n%2===0; }\nconsole.log(check(4));",
-"options":["true","false","undefined","error"],
-"correctAnswer":0
-},
-{
-"text":"What is output?\n\nfunction test(){ }\nconsole.log(test());",
-"options":["undefined","null","error","0"],
+"text":"A developer updates UI dynamically using innerHTML repeatedly. What is a potential concern?",
+"options":["Performance and security risks","Syntax error","No rendering","Memory leak always"],
 "correctAnswer":0
 },
 
 {
-"text":"What is output?\n\nconsole.log(1 && 0);",
-"options":["true","false","0","1"],
-"correctAnswer":2
-},
-{
-"text":"What will be printed?\n\nconsole.log(0 || \"Hello\");",
-"options":["0","Hello","false","undefined"],
-"correctAnswer":1
-},
-
-{
-"text":"What is output?\n\nlet x=5;\nif(x>2 && x<10){ console.log(\"Valid\"); }",
-"options":["Valid","Invalid","Error","Undefined"],
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.textContent = \"<b>Test</b>\";\nconsole.log(el.textContent);",
+"options":["<b>Test</b>","Test","undefined","error"],
 "correctAnswer":0
 },
 
 {
-"text":"What will be printed?\n\nlet i=0;\nfor(;i<2;){ console.log(i); i++; }",
-"options":["0 1","1 2","0","Error"],
-"correctAnswer":0
-},
-
-{
-"text":"What is output?\n\nlet arr=[1,2,3];\nlet i=0;\nwhile(i<arr.length){ console.log(arr[i]); i++; }",
-"options":["1 2 3","0 1 2","Error","Undefined"],
-"correctAnswer":0
-},
-
-{
-"text":"What will be printed?\n\nlet x=\"\";\nconsole.log(x || \"Default\");",
-"options":["\"\"","Default","undefined","Error"],
-"correctAnswer":1
-},
-
-{
-"text":"What is output?\n\nlet x=10;\nconsole.log(x>5 ? x : 0);",
-"options":["10","5","0","Error"],
-"correctAnswer":0
-},
-
-{
-"text":"What will be printed?\n\nlet x=3;\nswitch(x){ case 1: console.log(\"One\"); case 3: console.log(\"Three\"); }",
-"options":["One","Three","One Three","Error"],
-"correctAnswer":1
-},
-
-{
-"text":"What is output?\n\nlet arr=[5,10,15];\nfor(let i=0;i<arr.length;i++){ if(arr[i]>10) console.log(arr[i]); }",
-"options":["5","10","15","5 10 15"],
+"text":"Which method is NOT recommended for modern dynamic applications?",
+"options":["innerHTML","textContent","document.write","createElement"],
 "correctAnswer":2
 },
 
 {
-"text":"What will be printed?\n\nlet obj={marks:70};\nconsole.log(obj.marks>=60 ? \"Pass\" : \"Fail\");",
-"options":["Pass","Fail","Error","Undefined"],
+"text":"What is output?\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello\";",
+"options":["Sets HTML content","Returns value","Deletes element","Error always"],
 "correctAnswer":0
 },
 
 {
-"text":"What is output?\n\nlet x=null;\nconsole.log(x==undefined);",
+"text":"A developer uses textContent instead of innerHTML. What is the main advantage?",
+"options":["Faster rendering","Supports HTML parsing","Safer against injection","Adds styles automatically"],
+"correctAnswer":2
+},
+
+{
+"text":"A developer wants to select an element with id 'box'. Which method should be used?",
+"options":["getElementsByClassName","getElementById","querySelectorAll","getElementsByTagName"],
+"correctAnswer":1
+},
+
+{
+"text":"Which method returns a NodeList of all matching elements?",
+"options":["getElementById","querySelectorAll","getElementsByClassName","querySelector"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.querySelector(\"p\");\nconsole.log(el !== null);",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer selects elements using getElementsByClassName. What type of collection is returned?",
+"options":["Array","NodeList","HTMLCollection","Object"],
+"correctAnswer":2
+},
+
+{
+"text":"What is output?\n\nlet el = document.querySelectorAll(\"div\");\nconsole.log(el.length >= 0);",
 "options":["true","false","error","undefined"],
 "correctAnswer":0
 },
 
 {
-"text":"What will be printed?\n\nconsole.log(typeof NaN);",
-"options":["number","NaN","undefined","object"],
+"text":"Which method returns only the first matching element?",
+"options":["querySelector","querySelectorAll","getElementsByClassName","getElementsByTagName"],
 "correctAnswer":0
 },
 
 {
-"text":"What is output?\n\nlet i=1;\nfor(;i<=3;i++){}\nconsole.log(i);",
-"options":["3","4","1","Error"],
+"text":"What will be printed?\n\nlet el = document.createElement(\"li\");\nconsole.log(el.tagName);",
+"options":["li","LI","undefined","error"],
 "correctAnswer":1
 },
+
 {
-"text":"What is output?\n\nlet x=NaN;\nconsole.log(x==NaN);",
-"options":["true","false","error","undefined"],
+"text":"A developer modifies an image source dynamically. Which method is correct?",
+"options":["setAttribute","appendChild","createElement","remove"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet el = document.createElement(\"div\");\nel.style.color = \"red\";\nconsole.log(el.style.color);",
+"options":["red","blue","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer wants to create a new list item dynamically. Which method should be used?",
+"options":["createElement","innerHTML","querySelector","setAttribute"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.createElement(\"p\");\nconsole.log(typeof el);",
+"options":["object","string","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer appends a new element to a list. Which method is used?",
+"options":["appendChild","remove","setAttribute","querySelector"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet el = document.createElement(\"div\");\nel.remove();\nconsole.log(el);",
+"options":["Element still exists","undefined","null","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer removes an element from DOM. Which method is correct?",
+"options":["delete","remove","clear","pop"],
 "correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.setAttribute(\"id\",\"box\");\nconsole.log(el.id);",
+"options":["box","undefined","error","null"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer modifies style dynamically. Which property is used?",
+"options":["style","class","attribute","node"],
+"correctAnswer":0
+},
+
+{
+"text":"What is output?\n\nlet el = document.createElement(\"p\");\nel.textContent = \"Hello\";\ndocument.body.appendChild(el);",
+"options":["Adds paragraph to body","Deletes body","Error","Nothing"],
+"correctAnswer":0
+},
+
+{
+"text":"Which method selects elements using CSS selectors?",
+"options":["querySelector","getElementById","getElementsByTagName","createElement"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.innerHTML = \"Hello\";\nconsole.log(el.innerHTML);",
+"options":["Hello","<div>Hello</div>","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer wants to update only text inside element safely. Which method is best?",
+"options":["innerHTML","textContent","document.write","appendChild"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet el = document.createElement(\"span\");\nconsole.log(el.nodeType === 1);",
+"options":["true","false","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"Which method creates a new DOM element?",
+"options":["createElement","appendChild","setAttribute","querySelector"],
+"correctAnswer":0
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.setAttribute(\"class\",\"box\");\nconsole.log(el.className);",
+"options":["box","undefined","error","null"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer dynamically adds multiple elements. Which concept is being applied?",
+"options":["DOM traversal","DOM manipulation","Event handling","Looping"],
+"correctAnswer":1
+},
+
+{
+"text":"What is output?\n\nlet el = document.createElement(\"p\");\nel.textContent = \"Hi\";\nconsole.log(el.innerHTML);",
+"options":["Hi","<p>Hi</p>","undefined","error"],
+"correctAnswer":0
+},
+
+{
+"text":"A developer modifies multiple elements using querySelectorAll. What is returned?",
+"options":["Single element","NodeList","HTMLCollection","String"],
+"correctAnswer":1
+},
+
+{
+"text":"What will be printed?\n\nlet el = document.createElement(\"div\");\nel.style.backgroundColor = \"blue\";\nconsole.log(el.style.backgroundColor);",
+"options":["blue","red","undefined","error"],
+"correctAnswer":0
 }
-
-
 
 ]
 }
