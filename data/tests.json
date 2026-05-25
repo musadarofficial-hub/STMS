@@ -1,7 +1,7 @@
 [
 {
 "id": "JS-CH1",
-"title": "JavaScript Certification Test (Chapter 1.1 & 1.2)",
+"title": "JavaScript Certification Test (Chapter 1.1, 1.2 & 1.3)",
 "instructions": "You have only one chance to attempt this test. Once submitted, it cannot be retaken.",
 "timeLimit": 10,
 "passingPercentage": 80,
@@ -102,8 +102,23 @@
 "correctAnswer": 1
 },
 {
-"text": "A developer is testing code and wants to pause execution to inspect variable values. Which keyword should be inserted?",
-"options": ["pause", "stop", "debugger", "break"],
+"text": "A developer adds JavaScript directly inside an HTML button using onclick. As the project grows, the code becomes difficult to maintain. Which scripting approach is being used?",
+"options": ["External script", "Internal script", "Inline script", "Deferred script"],
+"correctAnswer": 2
+},
+{
+"text": "A company wants to reuse the same JavaScript file across multiple web pages and benefit from browser caching. Which approach should be implemented?",
+"options": ["Inline JavaScript", "Internal script block", "External JavaScript file", "Embedded CSS"],
+"correctAnswer": 2
+},
+{
+"text": "A webpage throws 'undefined element' errors because JavaScript executes before the DOM loads. What is the best practice to resolve this?",
+"options": ["Place scripts inside head", "Use inline scripts only", "Place scripts before /body", "Remove external scripts"],
+"correctAnswer": 2
+},
+{
+"text": "Two script files are included: a.js and b.js. File b.js depends on variables declared in a.js. How should they be ordered?",
+"options": ["b.js before a.js", "Both inside <head>", "a.js before b.js", "Order does not matter"],
 "correctAnswer": 2
 }
 ]
