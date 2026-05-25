@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/scientql/musadar.com/stms/
+    - /bin/cp -R * $DEPLOYPATH
